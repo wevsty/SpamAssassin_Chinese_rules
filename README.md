@@ -1,0 +1,2 @@
+# SpamAssassin_Chinese_rules
+SpamAssassin AntiSpam Chinese rules 基于SpamAssassin的中文垃圾邮件过滤规则
