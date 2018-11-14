@@ -1,8 +1,8 @@
 ##############################################################################
-# WEVSTY_ZHCN_UTF8.cf 
+# WEVSTY_ZHZHCN_BLACK_UTF8.cf 
 # Rule modification based on CERNET Computer Emergency Response Team (CCERT)
 # CERNET Chinese rules.
-# WEVSTY_ZHCN_UTF8.cf updated by wevsty.
+# WEVSTY_ZHZHCN_BLACK_UTF8.cf updated by wevsty.
 # The license inherits the Apache license.
 # Last Update:2016/09/30
 # Github Project address https://github.com/wevsty/SpamAssassin_Chinese_rules
@@ -35,2010 +35,1327 @@
 ##############################################################################
 
 
-header CN_SUBJECT_1	Subject =~ /优惠/
-describe CN_SUBJECT_1	Subject contains "优惠"
-score CN_SUBJECT_1	1.254
-
-header CN_SUBJECT_5	Subject =~ /合作/
-describe CN_SUBJECT_5	Subject contains "合作"
-score CN_SUBJECT_5	0.233
-
-header CN_SUBJECT_6	Subject =~ /发票/
-describe CN_SUBJECT_6	Subject contains "发票"
-score CN_SUBJECT_6	0.055
-
-header CN_SUBJECT_9	Subject =~ /实业/
-describe CN_SUBJECT_9	Subject contains "实业"
-score CN_SUBJECT_9	1.226
-
-header CN_SUBJECT_12	Subject =~ /代开/
-describe CN_SUBJECT_12	Subject contains "代开"
-score CN_SUBJECT_12	2.460
-
-header CN_SUBJECT_13	Subject =~ /票！/
-describe CN_SUBJECT_13	Subject contains "票！"
-score CN_SUBJECT_13	0.039
-
-header CN_SUBJECT_25	Subject =~ /各类/
-describe CN_SUBJECT_25	Subject contains "各类"
-score CN_SUBJECT_25	0.015
-
-header CN_SUBJECT_31	Subject =~ /财务/
-describe CN_SUBJECT_31	Subject contains "财务"
-score CN_SUBJECT_31	0.050
-
-header CN_SUBJECT_33	Subject =~ /运作/
-describe CN_SUBJECT_33	Subject contains "运作"
-score CN_SUBJECT_33	0.532
-
-header CN_SUBJECT_34	Subject =~ /节省/
-describe CN_SUBJECT_34	Subject contains "节省"
-score CN_SUBJECT_34	1.500
-
-header CN_SUBJECT_36	Subject =~ /事宜/
-describe CN_SUBJECT_36	Subject contains "事宜"
-score CN_SUBJECT_36	0.204
-
-header CN_SUBJECT_45	Subject =~ /贸易/
-describe CN_SUBJECT_45	Subject contains "贸易"
-score CN_SUBJECT_45	0.493
-
-header CN_SUBJECT_48	Subject =~ /互利/
-describe CN_SUBJECT_48	Subject contains "互利"
-score CN_SUBJECT_48	1.061
-
-header CN_SUBJECT_50	Subject =~ /互惠/
-describe CN_SUBJECT_50	Subject contains "互惠"
-score CN_SUBJECT_50	0.997
-
-header CN_SUBJECT_70	Subject =~ /商务/
-describe CN_SUBJECT_70	Subject contains "商务"
-score CN_SUBJECT_70	0.780
-
-header CN_SUBJECT_72	Subject =~ /税务/
-describe CN_SUBJECT_72	Subject contains "税务"
-score CN_SUBJECT_72	0.351
-
-header CN_SUBJECT_73	Subject =~ /酒店/
-describe CN_SUBJECT_73	Subject contains "酒店"
-score CN_SUBJECT_73	0.879
-
-header CN_SUBJECT_78	Subject =~ /采购/
-describe CN_SUBJECT_78	Subject contains "采购"
-score CN_SUBJECT_78	1.080
-
-header CN_SUBJECT_81	Subject =~ /技巧/
-describe CN_SUBJECT_81	Subject contains "技巧"
-score CN_SUBJECT_81	0.112
-
-header CN_SUBJECT_84	Subject =~ /华利/
-describe CN_SUBJECT_84	Subject contains "华利"
-score CN_SUBJECT_84	0.363
-
-header CN_SUBJECT_90	Subject =~ /研修/
-describe CN_SUBJECT_90	Subject contains "研修"
-score CN_SUBJECT_90	1.320
-
-header CN_SUBJECT_93	Subject =~ /避税/
-describe CN_SUBJECT_93	Subject contains "避税"
-score CN_SUBJECT_93	1.380
-
-header CN_SUBJECT_98	Subject =~ /您的/
-describe CN_SUBJECT_98	Subject contains "您的"
-score CN_SUBJECT_98	0.763
-
-header CN_SUBJECT_112	Subject =~ /家电/
-describe CN_SUBJECT_112	Subject contains "家电"
-score CN_SUBJECT_112	1.320
-
-header CN_SUBJECT_113	Subject =~ /超低/
-describe CN_SUBJECT_113	Subject contains "超低"
-score CN_SUBJECT_113	0.772
-
-header CN_SUBJECT_115	Subject =~ /房价/
-describe CN_SUBJECT_115	Subject contains "房价"
-score CN_SUBJECT_115	1.080
-
-header CN_SUBJECT_117	Subject =~ /3000多家/
-describe CN_SUBJECT_117	Subject contains "3000多家"
-score CN_SUBJECT_117	1.380
-
-header CN_SUBJECT_118	Subject =~ /享受全国/
-describe CN_SUBJECT_118	Subject contains "享受全国"
-score CN_SUBJECT_118	1.380
-
-header CN_SUBJECT_137	Subject =~ /阿里/
-describe CN_SUBJECT_137	Subject contains "阿里"
-score CN_SUBJECT_137	1.128
-
-header CN_SUBJECT_141	Subject =~ /佳和/
-describe CN_SUBJECT_141	Subject contains "佳和"
-score CN_SUBJECT_141	0.332
-
-header CN_SUBJECT_142	Subject =~ /潜在/
-describe CN_SUBJECT_142	Subject contains "潜在"
-score CN_SUBJECT_142	1.320
-
-header CN_SUBJECT_143	Subject =~ /摄像机/
-describe CN_SUBJECT_143	Subject contains "摄像机"
-score CN_SUBJECT_143	1.200
-
-header CN_SUBJECT_148	Subject =~ /特价/
-describe CN_SUBJECT_148	Subject contains "特价"
-score CN_SUBJECT_148	1.150
-
-header CN_SUBJECT_161	Subject =~ /票据/
-describe CN_SUBJECT_161	Subject contains "票据"
-score CN_SUBJECT_161	1.320
-
-header CN_SUBJECT_164	Subject =~ /与您/
-describe CN_SUBJECT_164	Subject contains "与您"
-score CN_SUBJECT_164	0.707
-
-header CN_SUBJECT_170	Subject =~ /华隆/
-describe CN_SUBJECT_170	Subject contains "华隆"
-score CN_SUBJECT_170	0.034
-
-header CN_SUBJECT_175	Subject =~ /\(经理/
-describe CN_SUBJECT_175	Subject contains "\(经理"
-score CN_SUBJECT_175	0.029
-
-header CN_SUBJECT_180	Subject =~ /负责人\(/
-describe CN_SUBJECT_180	Subject contains "负责人\("
-score CN_SUBJECT_180	0.400
-
-header CN_SUBJECT_188	Subject =~ /报关/
-describe CN_SUBJECT_188	Subject contains "报关"
-score CN_SUBJECT_188	1.320
-
-header CN_SUBJECT_190	Subject =~ /AD:信息/
-describe CN_SUBJECT_190	Subject contains "AD:信息"
-score CN_SUBJECT_190	0.328
-
-header CN_SUBJECT_191	Subject =~ / 发 票/
-describe CN_SUBJECT_191	Subject contains " 发 票"
-score CN_SUBJECT_191	1.260
-
-header CN_SUBJECT_194	Subject =~ /维修/
-describe CN_SUBJECT_194	Subject contains "维修"
-score CN_SUBJECT_194	0.900
-
-header CN_SUBJECT_196	Subject =~ /供应/
-describe CN_SUBJECT_196	Subject contains "供应"
-score CN_SUBJECT_196	1.080
-
-header CN_SUBJECT_197	Subject =~ /资源在/
-describe CN_SUBJECT_197	Subject contains "资源在"
-score CN_SUBJECT_197	1.260
-
-header CN_SUBJECT_199	Subject =~ /财富资源/
-describe CN_SUBJECT_199	Subject contains "财富资源"
-score CN_SUBJECT_199	1.200
-
-header CN_SUBJECT_200	Subject =~ /器材/
-describe CN_SUBJECT_200	Subject contains "器材"
-score CN_SUBJECT_200	1.200
-
-header CN_SUBJECT_203	Subject =~ /进出口/
-describe CN_SUBJECT_203	Subject contains "进出口"
-score CN_SUBJECT_203	1.140
-
-header CN_SUBJECT_217	Subject =~ /免费注册/
-describe CN_SUBJECT_217	Subject contains "免费注册"
-score CN_SUBJECT_217	1.080
-
-header CN_SUBJECT_219	Subject =~ /香港公司/
-describe CN_SUBJECT_219	Subject contains "香港公司"
-score CN_SUBJECT_219	1.200
-
-header CN_SUBJECT_221	Subject =~ /实战/
-describe CN_SUBJECT_221	Subject contains "实战"
-score CN_SUBJECT_221	1.140
-
-header CN_SUBJECT_224	Subject =~ /打败/
-describe CN_SUBJECT_224	Subject contains "打败"
-score CN_SUBJECT_224	0.853
-
-header CN_SUBJECT_226	Subject =~ /尽在/
-describe CN_SUBJECT_226	Subject contains "尽在"
-score CN_SUBJECT_226	0.881
-
-header CN_SUBJECT_227	Subject =~ /管理与/
-describe CN_SUBJECT_227	Subject contains "管理与"
-score CN_SUBJECT_227	0.960
-
-header CN_SUBJECT_228	Subject =~ /技能/
-describe CN_SUBJECT_228	Subject contains "技能"
-score CN_SUBJECT_228	0.093
-
-header CN_SUBJECT_230	Subject =~ /回复！/
-describe CN_SUBJECT_230	Subject contains "回复！"
-score CN_SUBJECT_230	1.320
-
-header CN_SUBJECT_231	Subject =~ /企业信息/
-describe CN_SUBJECT_231	Subject contains "企业信息"
-score CN_SUBJECT_231	0.486
-
-header CN_SUBJECT_232	Subject =~ /付款/
-describe CN_SUBJECT_232	Subject contains "付款"
-score CN_SUBJECT_232	1.080
-
-header CN_SUBJECT_236	Subject =~ /提升/
-describe CN_SUBJECT_236	Subject contains "提升"
-score CN_SUBJECT_236	0.789
-
-header CN_SUBJECT_238	Subject =~ /降低/
-describe CN_SUBJECT_238	Subject contains "降低"
-score CN_SUBJECT_238	0.502
-
-header CN_SUBJECT_239	Subject =~ /群发/
-describe CN_SUBJECT_239	Subject contains "群发"
-score CN_SUBJECT_239	1.080
-
-header CN_SUBJECT_242	Subject =~ /合办/
-describe CN_SUBJECT_242	Subject contains "合办"
-score CN_SUBJECT_242	0.192
-
-header CN_SUBJECT_244	Subject =~ /印刷/
-describe CN_SUBJECT_244	Subject contains "印刷"
-score CN_SUBJECT_244	1.080
-
-header CN_SUBJECT_248	Subject =~ /用和/
-describe CN_SUBJECT_248	Subject contains "用和"
-score CN_SUBJECT_248	1.080
-
-header CN_SUBJECT_249	Subject =~ /家庭用/
-describe CN_SUBJECT_249	Subject contains "家庭用"
-score CN_SUBJECT_249	1.080
-
-header CN_SUBJECT_251	Subject =~ /代  开/
-describe CN_SUBJECT_251	Subject contains "代  开"
-score CN_SUBJECT_251	0.726
-
-header CN_SUBJECT_254	Subject =~ /贵公司/
-describe CN_SUBJECT_254	Subject contains "贵公司"
-score CN_SUBJECT_254	1.140
-
-header CN_SUBJECT_259	Subject =~ /潮流/
-describe CN_SUBJECT_259	Subject contains "潮流"
-score CN_SUBJECT_259	0.523
-
-header CN_SUBJECT_263	Subject =~ /2006最新/
-describe CN_SUBJECT_263	Subject contains "2006最新"
-score CN_SUBJECT_263	1.140
-
-header CN_SUBJECT_267	Subject =~ /黎规/
-describe CN_SUBJECT_267	Subject contains "黎规"
-score CN_SUBJECT_267	0.345
-
-header CN_SUBJECT_269	Subject =~ /机票/
-describe CN_SUBJECT_269	Subject contains "机票"
-score CN_SUBJECT_269	1.020
-
-header CN_SUBJECT_270	Subject =~ /时尚数码/
-describe CN_SUBJECT_270	Subject contains "时尚数码"
-score CN_SUBJECT_270	1.080
-
-header CN_SUBJECT_271	Subject =~ /、时尚/
-describe CN_SUBJECT_271	Subject contains "、时尚"
-score CN_SUBJECT_271	1.080
-
-header CN_SUBJECT_272	Subject =~ /网上赚钱/
-describe CN_SUBJECT_272	Subject contains "网上赚钱"
-score CN_SUBJECT_272	1.020
-
-header CN_SUBJECT_275	Subject =~ /运输/
-describe CN_SUBJECT_275	Subject contains "运输"
-score CN_SUBJECT_275	0.023
-
-header CN_SUBJECT_276	Subject =~ /主机/
-describe CN_SUBJECT_276	Subject contains "主机"
-score CN_SUBJECT_276	0.900
-
-header CN_SUBJECT_279	Subject =~ /邮箱了吗/
-describe CN_SUBJECT_279	Subject contains "邮箱了吗"
-score CN_SUBJECT_279	0.228
-
-header CN_SUBJECT_280	Subject =~ /您改/
-describe CN_SUBJECT_280	Subject contains "您改"
-score CN_SUBJECT_280	0.973
-
-header CN_SUBJECT_287	Subject =~ /运用/
-describe CN_SUBJECT_287	Subject contains "运用"
-score CN_SUBJECT_287	1.020
-
-header CN_SUBJECT_296	Subject =~ /票0\.5-2%/
-describe CN_SUBJECT_296	Subject contains "票0\.5-2%"
-score CN_SUBJECT_296	0.108
-
-header CN_SUBJECT_303	Subject =~ /特惠/
-describe CN_SUBJECT_303	Subject contains "特惠"
-score CN_SUBJECT_303	1.020
-
-header CN_SUBJECT_308	Subject =~ /验证后/
-describe CN_SUBJECT_308	Subject contains "验证后"
-score CN_SUBJECT_308	0.008
-
-header CN_SUBJECT_313	Subject =~ /已成为/
-describe CN_SUBJECT_313	Subject contains "已成为"
-score CN_SUBJECT_313	0.633
-
-header CN_SUBJECT_315	Subject =~ /赚钱已/
-describe CN_SUBJECT_315	Subject contains "赚钱已"
-score CN_SUBJECT_315	0.960
-
-header CN_SUBJECT_320	Subject =~ /只需/
-describe CN_SUBJECT_320	Subject contains "只需"
-score CN_SUBJECT_320	0.570
-
-header CN_SUBJECT_321	Subject =~ /家庭电脑/
-describe CN_SUBJECT_321	Subject contains "家庭电脑"
-score CN_SUBJECT_321	0.960
-
-header CN_SUBJECT_324	Subject =~ /外商/
-describe CN_SUBJECT_324	Subject contains "外商"
-score CN_SUBJECT_324	0.960
-
-header CN_SUBJECT_325	Subject =~ /\(AD\)高清/
-describe CN_SUBJECT_325	Subject contains "\(AD\)高清"
-score CN_SUBJECT_325	0.960
-
-header CN_SUBJECT_328	Subject =~ /友情链接/
-describe CN_SUBJECT_328	Subject contains "友情链接"
-score CN_SUBJECT_328	0.960
-
-header CN_SUBJECT_331	Subject =~ /TO;回复/
-describe CN_SUBJECT_331	Subject contains "TO;回复"
-score CN_SUBJECT_331	0.019
-
-header CN_SUBJECT_337	Subject =~ /为您/
-describe CN_SUBJECT_337	Subject contains "为您"
-score CN_SUBJECT_337	1.080
-
-header CN_SUBJECT_339	Subject =~ /相商/
-describe CN_SUBJECT_339	Subject contains "相商"
-score CN_SUBJECT_339	0.665
-
-header CN_SUBJECT_346	Subject =~ /分享!/
-describe CN_SUBJECT_346	Subject contains "分享!"
-score CN_SUBJECT_346	0.900
-
-header CN_SUBJECT_351	Subject =~ /管理资料/
-describe CN_SUBJECT_351	Subject contains "管理资料"
-score CN_SUBJECT_351	0.900
-
-header CN_SUBJECT_353	Subject =~ /窃听/
-describe CN_SUBJECT_353	Subject contains "窃听"
-score CN_SUBJECT_353	0.780
-
-header CN_SUBJECT_358	Subject =~ /网络赚钱/
-describe CN_SUBJECT_358	Subject contains "网络赚钱"
-score CN_SUBJECT_358	0.900
-
-header CN_SUBJECT_364	Subject =~ /振丰/
-describe CN_SUBJECT_364	Subject contains "振丰"
-score CN_SUBJECT_364	0.050
-
-header CN_SUBJECT_366	Subject =~ /TO：/
-describe CN_SUBJECT_366	Subject contains "TO："
-score CN_SUBJECT_366	0.877
-
-header CN_SUBJECT_367	Subject =~ /报价/
-describe CN_SUBJECT_367	Subject contains "报价"
-score CN_SUBJECT_367	0.840
-
-header CN_SUBJECT_371	Subject =~ /航空网/
-describe CN_SUBJECT_371	Subject contains "航空网"
-score CN_SUBJECT_371	0.900
-
-header CN_SUBJECT_372	Subject =~ /旅游航空/
-describe CN_SUBJECT_372	Subject contains "旅游航空"
-score CN_SUBJECT_372	0.900
-
-header CN_SUBJECT_375	Subject =~ /中国旅游/
-describe CN_SUBJECT_375	Subject contains "中国旅游"
-score CN_SUBJECT_375	0.840
-
-header CN_SUBJECT_376	Subject =~ /5600元/
-describe CN_SUBJECT_376	Subject contains "5600元"
-score CN_SUBJECT_376	0.840
-
-header CN_SUBJECT_377	Subject =~ /商管理/
-describe CN_SUBJECT_377	Subject contains "商管理"
-score CN_SUBJECT_377	0.329
-
-header CN_SUBJECT_378	Subject =~ /网络营销/
-describe CN_SUBJECT_378	Subject contains "网络营销"
-score CN_SUBJECT_378	0.769
-
-header CN_SUBJECT_380	Subject =~ /“电脑/
-describe CN_SUBJECT_380	Subject contains "“电脑"
-score CN_SUBJECT_380	0.137
-
-header CN_SUBJECT_382	Subject =~ /电脑版”/
-describe CN_SUBJECT_382	Subject contains "电脑版”"
-score CN_SUBJECT_382	0.137
-
-header CN_SUBJECT_385	Subject =~ /最新“/
-describe CN_SUBJECT_385	Subject contains "最新“"
-score CN_SUBJECT_385	0.137
-
-header CN_SUBJECT_387	Subject =~ /文件！/
-describe CN_SUBJECT_387	Subject contains "文件！"
-score CN_SUBJECT_387	0.840
-
-header CN_SUBJECT_391	Subject =~ /客户您好/
-describe CN_SUBJECT_391	Subject contains "客户您好"
-score CN_SUBJECT_391	0.554
-
-header CN_SUBJECT_394	Subject =~ /注塑/
-describe CN_SUBJECT_394	Subject contains "注塑"
-score CN_SUBJECT_394	0.780
-
-header CN_SUBJECT_395	Subject =~ /闲置/
-describe CN_SUBJECT_395	Subject contains "闲置"
-score CN_SUBJECT_395	0.840
-
-header CN_SUBJECT_397	Subject =~ /聪促/
-describe CN_SUBJECT_397	Subject contains "聪促"
-score CN_SUBJECT_397	1.320
-
-header CN_SUBJECT_400	Subject =~ /AD：/
-describe CN_SUBJECT_400	Subject contains "AD："
-score CN_SUBJECT_400	1.080
-
-header CN_SUBJECT_402	Subject =~ /票验证/
-describe CN_SUBJECT_402	Subject contains "票验证"
-score CN_SUBJECT_402	0.008
-
-header CN_SUBJECT_408	Subject =~ /职业化/
-describe CN_SUBJECT_408	Subject contains "职业化"
-score CN_SUBJECT_408	0.546
-
-header CN_SUBJECT_409	Subject =~ /全套费用/
-describe CN_SUBJECT_409	Subject contains "全套费用"
-score CN_SUBJECT_409	0.780
-
-header CN_SUBJECT_415	Subject =~ /赚钱新/
-describe CN_SUBJECT_415	Subject contains "赚钱新"
-score CN_SUBJECT_415	0.780
-
-header CN_SUBJECT_416	Subject =~ /注册香港/
-describe CN_SUBJECT_416	Subject contains "注册香港"
-score CN_SUBJECT_416	0.780
-
-header CN_SUBJECT_420	Subject =~ /回 复/
-describe CN_SUBJECT_420	Subject contains "回 复"
-score CN_SUBJECT_420	0.108
-
-header CN_SUBJECT_428	Subject =~ /统筹/
-describe CN_SUBJECT_428	Subject contains "统筹"
-score CN_SUBJECT_428	0.780
-
-header CN_SUBJECT_432	Subject =~ /最新网络/
-describe CN_SUBJECT_432	Subject contains "最新网络"
-score CN_SUBJECT_432	0.780
-
-header CN_SUBJECT_434	Subject =~ /新趋势/
-describe CN_SUBJECT_434	Subject contains "新趋势"
-score CN_SUBJECT_434	0.780
-
-header CN_SUBJECT_439	Subject =~ /）收/
-describe CN_SUBJECT_439	Subject contains "）收"
-score CN_SUBJECT_439	0.780
-
-header CN_SUBJECT_443	Subject =~ /宝圣/
-describe CN_SUBJECT_443	Subject contains "宝圣"
-score CN_SUBJECT_443	0.006
-
-header CN_SUBJECT_446	Subject =~ /行政工作/
-describe CN_SUBJECT_446	Subject contains "行政工作"
-score CN_SUBJECT_446	0.720
-
-header CN_SUBJECT_449	Subject =~ /代 开/
-describe CN_SUBJECT_449	Subject contains "代 开"
-score CN_SUBJECT_449	1.260
-
-header CN_SUBJECT_450	Subject =~ /叉车/
-describe CN_SUBJECT_450	Subject contains "叉车"
-score CN_SUBJECT_450	0.780
-
-header CN_SUBJECT_451	Subject =~ /准则/
-describe CN_SUBJECT_451	Subject contains "准则"
-score CN_SUBJECT_451	0.660
-
-header CN_SUBJECT_454	Subject =~ /高效/
-describe CN_SUBJECT_454	Subject contains "高效"
-score CN_SUBJECT_454	0.780
-
-header CN_SUBJECT_455	Subject =~ /高潮/
-describe CN_SUBJECT_455	Subject contains "高潮"
-score CN_SUBJECT_455	0.082
-
-header CN_SUBJECT_456	Subject =~ /灵活/
-describe CN_SUBJECT_456	Subject contains "灵活"
-score CN_SUBJECT_456	0.498
-
-header CN_SUBJECT_462	Subject =~ /征集友情/
-describe CN_SUBJECT_462	Subject contains "征集友情"
-score CN_SUBJECT_462	0.780
-
-header CN_SUBJECT_463	Subject =~ /中层/
-describe CN_SUBJECT_463	Subject contains "中层"
-score CN_SUBJECT_463	0.720
-
-header CN_SUBJECT_466	Subject =~ /订阅/
-describe CN_SUBJECT_466	Subject contains "订阅"
-score CN_SUBJECT_466	0.560
-
-header CN_SUBJECT_467	Subject =~ /商机/
-describe CN_SUBJECT_467	Subject contains "商机"
-score CN_SUBJECT_467	0.636
-
-header CN_SUBJECT_471	Subject =~ /）您/
-describe CN_SUBJECT_471	Subject contains "）您"
-score CN_SUBJECT_471	0.111
-
-header CN_SUBJECT_473	Subject =~ /与薪/
-describe CN_SUBJECT_473	Subject contains "与薪"
-score CN_SUBJECT_473	0.780
-
-header CN_SUBJECT_475	Subject =~ /文秘职业/
-describe CN_SUBJECT_475	Subject contains "文秘职业"
-score CN_SUBJECT_475	0.720
-
-header CN_SUBJECT_478	Subject =~ /宏海/
-describe CN_SUBJECT_478	Subject contains "宏海"
-score CN_SUBJECT_478	0.094
-
-header CN_SUBJECT_485	Subject =~ /怎样获得/
-describe CN_SUBJECT_485	Subject contains "怎样获得"
-score CN_SUBJECT_485	0.720
-
-header CN_SUBJECT_486	Subject =~ /获得更/
-describe CN_SUBJECT_486	Subject contains "获得更"
-score CN_SUBJECT_486	0.720
-
-header CN_SUBJECT_488	Subject =~ /更强烈/
-describe CN_SUBJECT_488	Subject contains "更强烈"
-score CN_SUBJECT_488	0.720
-
-header CN_SUBJECT_491	Subject =~ /绩效/
-describe CN_SUBJECT_491	Subject contains "绩效"
-score CN_SUBJECT_491	0.720
-
-header CN_SUBJECT_495	Subject =~ /化训练/
-describe CN_SUBJECT_495	Subject contains "化训练"
-score CN_SUBJECT_495	0.900
-
-header CN_SUBJECT_497	Subject =~ /高级文秘/
-describe CN_SUBJECT_497	Subject contains "高级文秘"
-score CN_SUBJECT_497	0.720
-
-header CN_SUBJECT_500	Subject =~ /您在/
-describe CN_SUBJECT_500	Subject contains "您在"
-score CN_SUBJECT_500	0.720
-
-header CN_SUBJECT_501	Subject =~ /的性爱/
-describe CN_SUBJECT_501	Subject contains "的性爱"
-score CN_SUBJECT_501	0.720
-
-header CN_SUBJECT_504	Subject =~ /公司商业/
-describe CN_SUBJECT_504	Subject contains "公司商业"
-score CN_SUBJECT_504	0.141
-
-header CN_SUBJECT_509	Subject =~ /、交通/
-describe CN_SUBJECT_509	Subject contains "、交通"
-score CN_SUBJECT_509	0.660
-
-header CN_SUBJECT_510	Subject =~ /迪基/
-describe CN_SUBJECT_510	Subject contains "迪基"
-score CN_SUBJECT_510	0.138
-
-header CN_SUBJECT_511	Subject =~ /中国软件/
-describe CN_SUBJECT_511	Subject contains "中国软件"
-score CN_SUBJECT_511	0.540
-
-header CN_SUBJECT_513	Subject =~ /持久/
-describe CN_SUBJECT_513	Subject contains "持久"
-score CN_SUBJECT_513	0.660
-
-header CN_SUBJECT_515	Subject =~ /强烈更/
-describe CN_SUBJECT_515	Subject contains "强烈更"
-score CN_SUBJECT_515	0.660
-
-header CN_SUBJECT_517	Subject =~ /工作邮件/
-describe CN_SUBJECT_517	Subject contains "工作邮件"
-score CN_SUBJECT_517	0.660
-
-header CN_SUBJECT_524	Subject =~ /好：/
-describe CN_SUBJECT_524	Subject contains "好："
-score CN_SUBJECT_524	1.320
-
-header CN_SUBJECT_533	Subject =~ /管理高级/
-describe CN_SUBJECT_533	Subject contains "管理高级"
-score CN_SUBJECT_533	0.660
-
-header CN_SUBJECT_536	Subject =~ /节能/
-describe CN_SUBJECT_536	Subject contains "节能"
-score CN_SUBJECT_536	0.600
-
-header CN_SUBJECT_547	Subject =~ /软件网/
-describe CN_SUBJECT_547	Subject contains "软件网"
-score CN_SUBJECT_547	0.720
-
-header CN_SUBJECT_549	Subject =~ /网征集/
-describe CN_SUBJECT_549	Subject contains "网征集"
-score CN_SUBJECT_549	0.660
-
-header CN_SUBJECT_554	Subject =~ /张伟明/
-describe CN_SUBJECT_554	Subject contains "张伟明"
-score CN_SUBJECT_554	0.236
-
-header CN_SUBJECT_557	Subject =~ /代。/
-describe CN_SUBJECT_557	Subject contains "代。"
-score CN_SUBJECT_557	0.333
-
-header CN_SUBJECT_558	Subject =~ /帮手/
-describe CN_SUBJECT_558	Subject contains "帮手"
-score CN_SUBJECT_558	0.600
-
-header CN_SUBJECT_562	Subject =~ /景兴/
-describe CN_SUBJECT_562	Subject contains "景兴"
-score CN_SUBJECT_562	0.115
-
-header CN_SUBJECT_565	Subject =~ /语音短信/
-describe CN_SUBJECT_565	Subject contains "语音短信"
-score CN_SUBJECT_565	0.660
-
-header CN_SUBJECT_572	Subject =~ /  发   ?/
-describe CN_SUBJECT_572	Subject contains "  发   ?"
-score CN_SUBJECT_572	0.490
-
-header CN_SUBJECT_575	Subject =~ /经理必看/
-describe CN_SUBJECT_575	Subject contains "经理必看"
-score CN_SUBJECT_575	0.600
-
-header CN_SUBJECT_576	Subject =~ /互联网的/
-describe CN_SUBJECT_576	Subject contains "互联网的"
-score CN_SUBJECT_576	0.600
-
-header CN_SUBJECT_577	Subject =~ /供求/
-describe CN_SUBJECT_577	Subject contains "供求"
-score CN_SUBJECT_577	0.600
-
-header CN_SUBJECT_581	Subject =~ /商业！/
-describe CN_SUBJECT_581	Subject contains "商业！"
-score CN_SUBJECT_581	0.126
-
-header CN_SUBJECT_588	Subject =~ /活人/
-describe CN_SUBJECT_588	Subject contains "活人"
-score CN_SUBJECT_588	0.540
-
-header CN_SUBJECT_593	Subject =~ /Re:锣盚:/
-describe CN_SUBJECT_593	Subject contains "Re:锣盚:"
-score CN_SUBJECT_593	0.600
-
-header CN_SUBJECT_594	Subject =~ /化工、/
-describe CN_SUBJECT_594	Subject contains "化工、"
-score CN_SUBJECT_594	0.720
-
-header CN_SUBJECT_595	Subject =~ /决策/
-describe CN_SUBJECT_595	Subject contains "决策"
-score CN_SUBJECT_595	0.480
-
-header CN_SUBJECT_597	Subject =~ /\.经理/
-describe CN_SUBJECT_597	Subject contains "\.经理"
-score CN_SUBJECT_597	0.600
-
-header CN_SUBJECT_602	Subject =~ /、建筑/
-describe CN_SUBJECT_602	Subject contains "、建筑"
-score CN_SUBJECT_602	0.426
-
-header CN_SUBJECT_605	Subject =~ /建站/
-describe CN_SUBJECT_605	Subject contains "建站"
-score CN_SUBJECT_605	0.540
-
-header CN_SUBJECT_612	Subject =~ /季飘/
-describe CN_SUBJECT_612	Subject contains "季飘"
-score CN_SUBJECT_612	0.900
-
-header CN_SUBJECT_613	Subject =~ /网上免费/
-describe CN_SUBJECT_613	Subject contains "网上免费"
-score CN_SUBJECT_613	0.540
-
-header CN_SUBJECT_616	Subject =~ / - 李开/
-describe CN_SUBJECT_616	Subject contains " - 李开"
-score CN_SUBJECT_616	0.540
-
-header CN_SUBJECT_617	Subject =~ /物资/
-describe CN_SUBJECT_617	Subject contains "物资"
-score CN_SUBJECT_617	0.082
-
-header CN_SUBJECT_618	Subject =~ /    发  /
-describe CN_SUBJECT_618	Subject contains "    发  "
-score CN_SUBJECT_618	0.443
-
-header CN_SUBJECT_620	Subject =~ /复 Googl/
-describe CN_SUBJECT_620	Subject contains "复 Googl"
-score CN_SUBJECT_620	0.540
-
-header CN_SUBJECT_625	Subject =~ /鳖瘤/
-describe CN_SUBJECT_625	Subject contains "鳖瘤"
-score CN_SUBJECT_625	0.960
-
-header CN_SUBJECT_627	Subject =~ /酬设计/
-describe CN_SUBJECT_627	Subject contains "酬设计"
-score CN_SUBJECT_627	0.660
-
-header CN_SUBJECT_631	Subject =~ /财税/
-describe CN_SUBJECT_631	Subject contains "财税"
-score CN_SUBJECT_631	0.540
-
-header CN_SUBJECT_635	Subject =~ /帮你/
-describe CN_SUBJECT_635	Subject contains "帮你"
-score CN_SUBJECT_635	0.540
-
-header CN_SUBJECT_637	Subject =~ /巴巴/
-describe CN_SUBJECT_637	Subject contains "巴巴"
-score CN_SUBJECT_637	0.660
-
-header CN_SUBJECT_638	Subject =~ /企 业/
-describe CN_SUBJECT_638	Subject contains "企 业"
-score CN_SUBJECT_638	0.780
-
-header CN_SUBJECT_645	Subject =~ /经典管理/
-describe CN_SUBJECT_645	Subject contains "经典管理"
-score CN_SUBJECT_645	0.540
-
-header CN_SUBJECT_646	Subject =~ /-上\/海/
-describe CN_SUBJECT_646	Subject contains "-上\/海"
-score CN_SUBJECT_646	0.540
-
-header CN_SUBJECT_647	Subject =~ /咨询营销/
-describe CN_SUBJECT_647	Subject contains "咨询营销"
-score CN_SUBJECT_647	0.540
-
-header CN_SUBJECT_648	Subject =~ /2006经典/
-describe CN_SUBJECT_648	Subject contains "2006经典"
-score CN_SUBJECT_648	0.540
-
-header CN_SUBJECT_649	Subject =~ /营销资料/
-describe CN_SUBJECT_649	Subject contains "营销资料"
-score CN_SUBJECT_649	0.540
-
-header CN_SUBJECT_651	Subject =~ /批发/
-describe CN_SUBJECT_651	Subject contains "批发"
-score CN_SUBJECT_651	0.480
-
-header CN_SUBJECT_652	Subject =~ /您分享/
-describe CN_SUBJECT_652	Subject contains "您分享"
-score CN_SUBJECT_652	1.020
-
-header CN_SUBJECT_654	Subject =~ /工程项目/
-describe CN_SUBJECT_654	Subject contains "工程项目"
-score CN_SUBJECT_654	0.540
-
-header CN_SUBJECT_655	Subject =~ /库与/
-describe CN_SUBJECT_655	Subject contains "库与"
-score CN_SUBJECT_655	0.540
-
-header CN_SUBJECT_657	Subject =~ /、协会/
-describe CN_SUBJECT_657	Subject contains "、协会"
-score CN_SUBJECT_657	0.540
-
-header CN_SUBJECT_658	Subject =~ /名录/
-describe CN_SUBJECT_658	Subject contains "名录"
-score CN_SUBJECT_658	0.540
-
-header CN_SUBJECT_660	Subject =~ /公司、/
-describe CN_SUBJECT_660	Subject contains "公司、"
-score CN_SUBJECT_660	0.540
-
-header CN_SUBJECT_662	Subject =~ /、化工/
-describe CN_SUBJECT_662	Subject contains "、化工"
-score CN_SUBJECT_662	0.288
-
-header CN_SUBJECT_665	Subject =~ /优 惠/
-describe CN_SUBJECT_665	Subject contains "优 惠"
-score CN_SUBJECT_665	0.226
-
-header CN_SUBJECT_668	Subject =~ /【211job/
-describe CN_SUBJECT_668	Subject contains "【211job"
-score CN_SUBJECT_668	0.540
-
-header CN_SUBJECT_670	Subject =~ /RO:回复/
-describe CN_SUBJECT_670	Subject contains "RO:回复"
-score CN_SUBJECT_670	0.031
-
-header CN_SUBJECT_671	Subject =~ /尊敬的/
-describe CN_SUBJECT_671	Subject contains "尊敬的"
-score CN_SUBJECT_671	0.313
-
-header CN_SUBJECT_672	Subject =~ /\,代理/
-describe CN_SUBJECT_672	Subject contains "\,代理"
-score CN_SUBJECT_672	0.540
-
-header CN_SUBJECT_675	Subject =~ /建材/
-describe CN_SUBJECT_675	Subject contains "建材"
-score CN_SUBJECT_675	0.480
-
-header CN_SUBJECT_681	Subject =~ /实务/
-describe CN_SUBJECT_681	Subject contains "实务"
-score CN_SUBJECT_681	0.960
-
-header CN_SUBJECT_685	Subject =~ /建筑、/
-describe CN_SUBJECT_685	Subject contains "建筑、"
-score CN_SUBJECT_685	0.720
-
-header CN_SUBJECT_687	Subject =~ /美白/
-describe CN_SUBJECT_687	Subject contains "美白"
-score CN_SUBJECT_687	0.420
-
-header CN_SUBJECT_688	Subject =~ /、环保/
-describe CN_SUBJECT_688	Subject contains "、环保"
-score CN_SUBJECT_688	0.480
-
-header CN_SUBJECT_689	Subject =~ /交通、/
-describe CN_SUBJECT_689	Subject contains "交通、"
-score CN_SUBJECT_689	0.480
-
-header CN_SUBJECT_695	Subject =~ /   票/
-describe CN_SUBJECT_695	Subject contains "   票"
-score CN_SUBJECT_695	1.097
-
-header CN_SUBJECT_696	Subject =~ /粤丰/
-describe CN_SUBJECT_696	Subject contains "粤丰"
-score CN_SUBJECT_696	0.042
-
-header CN_SUBJECT_697	Subject =~ /分析与/
-describe CN_SUBJECT_697	Subject contains "分析与"
-score CN_SUBJECT_697	0.574
-
-header CN_SUBJECT_698	Subject =~ /环保工程/
-describe CN_SUBJECT_698	Subject contains "环保工程"
-score CN_SUBJECT_698	0.480
-
-header CN_SUBJECT_699	Subject =~ /对手/
-describe CN_SUBJECT_699	Subject contains "对手"
-score CN_SUBJECT_699	0.877
-
-header CN_SUBJECT_705	Subject =~ /-深\/圳/
-describe CN_SUBJECT_705	Subject contains "-深\/圳"
-score CN_SUBJECT_705	0.540
-
-header CN_SUBJECT_710	Subject =~ /工艺品/
-describe CN_SUBJECT_710	Subject contains "工艺品"
-score CN_SUBJECT_710	0.480
-
-header CN_SUBJECT_711	Subject =~ /网联/
-describe CN_SUBJECT_711	Subject contains "网联"
-score CN_SUBJECT_711	0.480
-
-header CN_SUBJECT_712	Subject =~ /最近还好/
-describe CN_SUBJECT_712	Subject contains "最近还好"
-score CN_SUBJECT_712	0.480
-
-header CN_SUBJECT_715	Subject =~ /价格吗？/
-describe CN_SUBJECT_715	Subject contains "价格吗？"
-score CN_SUBJECT_715	0.480
-
-header CN_SUBJECT_717	Subject =~ /全案/
-describe CN_SUBJECT_717	Subject contains "全案"
-score CN_SUBJECT_717	0.444
-
-header CN_SUBJECT_721	Subject =~ /咨询策划/
-describe CN_SUBJECT_721	Subject contains "咨询策划"
-score CN_SUBJECT_721	0.480
-
-header CN_SUBJECT_722	Subject =~ /阴茎/
-describe CN_SUBJECT_722	Subject contains "阴茎"
-score CN_SUBJECT_722	0.480
-
-header CN_SUBJECT_724	Subject =~ /市场营销/
-describe CN_SUBJECT_724	Subject contains "市场营销"
-score CN_SUBJECT_724	0.360
-
-header CN_SUBJECT_726	Subject =~ /策划项目/
-describe CN_SUBJECT_726	Subject contains "策划项目"
-score CN_SUBJECT_726	0.480
-
-header CN_SUBJECT_729	Subject =~ /大批/
-describe CN_SUBJECT_729	Subject contains "大批"
-score CN_SUBJECT_729	0.420
-
-header CN_SUBJECT_730	Subject =~ /重磅/
-describe CN_SUBJECT_730	Subject contains "重磅"
-score CN_SUBJECT_730	0.540
-
-header CN_SUBJECT_738	Subject =~ /研讨班/
-describe CN_SUBJECT_738	Subject contains "研讨班"
-score CN_SUBJECT_738	0.540
-
-header CN_SUBJECT_739	Subject =~ /国庆中秋/
-describe CN_SUBJECT_739	Subject contains "国庆中秋"
-score CN_SUBJECT_739	0.480
-
-header CN_SUBJECT_743	Subject =~ /好消息!/
-describe CN_SUBJECT_743	Subject contains "好消息!"
-score CN_SUBJECT_743	0.480
-
-header CN_SUBJECT_752	Subject =~ /开拓/
-describe CN_SUBJECT_752	Subject contains "开拓"
-score CN_SUBJECT_752	0.420
-
-header CN_SUBJECT_753	Subject =~ /劳动争议/
-describe CN_SUBJECT_753	Subject contains "劳动争议"
-score CN_SUBJECT_753	0.480
-
-header CN_SUBJECT_754	Subject =~ /解决方案/
-describe CN_SUBJECT_754	Subject contains "解决方案"
-score CN_SUBJECT_754	0.360
-
-header CN_SUBJECT_759	Subject =~ /协会全套/
-describe CN_SUBJECT_759	Subject contains "协会全套"
-score CN_SUBJECT_759	0.480
-
-header CN_SUBJECT_761	Subject =~ /成人用品/
-describe CN_SUBJECT_761	Subject contains "成人用品"
-score CN_SUBJECT_761	0.480
-
-header CN_SUBJECT_764	Subject =~ /AD;回复/
-describe CN_SUBJECT_764	Subject contains "AD;回复"
-score CN_SUBJECT_764	0.090
-
-header CN_SUBJECT_768	Subject =~ /还好吗？/
-describe CN_SUBJECT_768	Subject contains "还好吗？"
-score CN_SUBJECT_768	0.420
-
-header CN_SUBJECT_769	Subject =~ /男女情趣/
-describe CN_SUBJECT_769	Subject contains "男女情趣"
-score CN_SUBJECT_769	0.420
-
-header CN_SUBJECT_770	Subject =~ / 催情/
-describe CN_SUBJECT_770	Subject contains " 催情"
-score CN_SUBJECT_770	0.420
-
-header CN_SUBJECT_773	Subject =~ /咨询！/
-describe CN_SUBJECT_773	Subject contains "咨询！"
-score CN_SUBJECT_773	0.480
-
-header CN_SUBJECT_778	Subject =~ /、电力/
-describe CN_SUBJECT_778	Subject contains "、电力"
-score CN_SUBJECT_778	0.480
-
-header CN_SUBJECT_784	Subject =~ /海洲/
-describe CN_SUBJECT_784	Subject contains "海洲"
-score CN_SUBJECT_784	0.309
-
-header CN_SUBJECT_788	Subject =~ /商傲/
-describe CN_SUBJECT_788	Subject contains "商傲"
-score CN_SUBJECT_788	0.420
-
-header CN_SUBJECT_790	Subject =~ /开课！/
-describe CN_SUBJECT_790	Subject contains "开课！"
-score CN_SUBJECT_790	0.480
-
-header CN_SUBJECT_791	Subject =~ /仿名/
-describe CN_SUBJECT_791	Subject contains "仿名"
-score CN_SUBJECT_791	0.660
-
-header CN_SUBJECT_792	Subject =~ /注册登陆/
-describe CN_SUBJECT_792	Subject contains "注册登陆"
-score CN_SUBJECT_792	0.420
-
-header CN_SUBJECT_793	Subject =~ /高精/
-describe CN_SUBJECT_793	Subject contains "高精"
-score CN_SUBJECT_793	0.540
-
-header CN_SUBJECT_797	Subject =~ /-环球/
-describe CN_SUBJECT_797	Subject contains "-环球"
-score CN_SUBJECT_797	0.420
-
-header CN_SUBJECT_800	Subject =~ /同城/
-describe CN_SUBJECT_800	Subject contains "同城"
-score CN_SUBJECT_800	0.326
-
-header CN_SUBJECT_803	Subject =~ /回复；/
-describe CN_SUBJECT_803	Subject contains "回复；"
-score CN_SUBJECT_803	0.195
-
-header CN_SUBJECT_804	Subject =~ /提供服务/
-describe CN_SUBJECT_804	Subject contains "提供服务"
-score CN_SUBJECT_804	0.068
-
-header CN_SUBJECT_810	Subject =~ /保温/
-describe CN_SUBJECT_810	Subject contains "保温"
-score CN_SUBJECT_810	0.360
-
-header CN_SUBJECT_812	Subject =~ /表情/
-describe CN_SUBJECT_812	Subject contains "表情"
-score CN_SUBJECT_812	0.360
-
-header CN_SUBJECT_813	Subject =~ /、邮件/
-describe CN_SUBJECT_813	Subject contains "、邮件"
-score CN_SUBJECT_813	0.420
-
-header CN_SUBJECT_816	Subject =~ /爱情公寓/
-describe CN_SUBJECT_816	Subject contains "爱情公寓"
-score CN_SUBJECT_816	0.420
-
-header CN_SUBJECT_819	Subject =~ /SM 男女/
-describe CN_SUBJECT_819	Subject contains "SM 男女"
-score CN_SUBJECT_819	0.420
-
-header CN_SUBJECT_820	Subject =~ /卓越中国/
-describe CN_SUBJECT_820	Subject contains "卓越中国"
-score CN_SUBJECT_820	0.420
-
-header CN_SUBJECT_827	Subject =~ /深丰/
-describe CN_SUBJECT_827	Subject contains "深丰"
-score CN_SUBJECT_827	0.021
-
-header CN_SUBJECT_831	Subject =~ /利器/
-describe CN_SUBJECT_831	Subject contains "利器"
-score CN_SUBJECT_831	0.360
-
-header CN_SUBJECT_834	Subject =~ /。代/
-describe CN_SUBJECT_834	Subject contains "。代"
-score CN_SUBJECT_834	0.360
-
-header CN_SUBJECT_840	Subject =~ /中秋不/
-describe CN_SUBJECT_840	Subject contains "中秋不"
-score CN_SUBJECT_840	0.360
-
-header CN_SUBJECT_841	Subject =~ /论文征稿/
-describe CN_SUBJECT_841	Subject contains "论文征稿"
-score CN_SUBJECT_841	0.420
-
-header CN_SUBJECT_843	Subject =~ /数据中心/
-describe CN_SUBJECT_843	Subject contains "数据中心"
-score CN_SUBJECT_843	0.360
-
-header CN_SUBJECT_845	Subject =~ /不送礼/
-describe CN_SUBJECT_845	Subject contains "不送礼"
-score CN_SUBJECT_845	0.360
-
-header CN_SUBJECT_846	Subject =~ /索取/
-describe CN_SUBJECT_846	Subject contains "索取"
-score CN_SUBJECT_846	0.300
-
-header CN_SUBJECT_847	Subject =~ /上海电信/
-describe CN_SUBJECT_847	Subject contains "上海电信"
-score CN_SUBJECT_847	0.360
-
-header CN_SUBJECT_855	Subject =~ /淀粉/
-describe CN_SUBJECT_855	Subject contains "淀粉"
-score CN_SUBJECT_855	0.360
-
-header CN_SUBJECT_856	Subject =~ /电信数据/
-describe CN_SUBJECT_856	Subject contains "电信数据"
-score CN_SUBJECT_856	0.360
-
-header CN_SUBJECT_857	Subject =~ /中华医药/
-describe CN_SUBJECT_857	Subject contains "中华医药"
-score CN_SUBJECT_857	0.360
-
-header CN_SUBJECT_860	Subject =~ /网---/
-describe CN_SUBJECT_860	Subject contains "网---"
-score CN_SUBJECT_860	0.360
-
-header CN_SUBJECT_861	Subject =~ /医药化工/
-describe CN_SUBJECT_861	Subject contains "医药化工"
-score CN_SUBJECT_861	0.360
-
-header CN_SUBJECT_862	Subject =~ /公文/
-describe CN_SUBJECT_862	Subject contains "公文"
-score CN_SUBJECT_862	0.360
-
-header CN_SUBJECT_866	Subject =~ /丰胸/
-describe CN_SUBJECT_866	Subject contains "丰胸"
-score CN_SUBJECT_866	0.360
-
-header CN_SUBJECT_868	Subject =~ /您要/
-describe CN_SUBJECT_868	Subject contains "您要"
-score CN_SUBJECT_868	0.420
-
-header CN_SUBJECT_870	Subject =~ / - 华晨/
-describe CN_SUBJECT_870	Subject contains " - 华晨"
-score CN_SUBJECT_870	0.360
-
-header CN_SUBJECT_871	Subject =~ /祛痘/
-describe CN_SUBJECT_871	Subject contains "祛痘"
-score CN_SUBJECT_871	0.360
-
-header CN_SUBJECT_872	Subject =~ /骏捷/
-describe CN_SUBJECT_872	Subject contains "骏捷"
-score CN_SUBJECT_872	0.360
-
-header CN_SUBJECT_873	Subject =~ /按 1\.5% /
-describe CN_SUBJECT_873	Subject contains "按 1\.5% "
-score CN_SUBJECT_873	0.010
-
-header CN_SUBJECT_882	Subject =~ /兼容/
-describe CN_SUBJECT_882	Subject contains "兼容"
-score CN_SUBJECT_882	0.360
-
-header CN_SUBJECT_885	Subject =~ /类论文/
-describe CN_SUBJECT_885	Subject contains "类论文"
-score CN_SUBJECT_885	0.360
-
-header CN_SUBJECT_886	Subject =~ /昌隆/
-describe CN_SUBJECT_886	Subject contains "昌隆"
-score CN_SUBJECT_886	0.042
-
-header CN_SUBJECT_893	Subject =~ /开店/
-describe CN_SUBJECT_893	Subject contains "开店"
-score CN_SUBJECT_893	0.300
-
-header CN_SUBJECT_898	Subject =~ /税！/
-describe CN_SUBJECT_898	Subject contains "税！"
-score CN_SUBJECT_898	0.005
-
-header CN_SUBJECT_900	Subject =~ /纤维/
-describe CN_SUBJECT_900	Subject contains "纤维"
-score CN_SUBJECT_900	0.360
-
-header CN_SUBJECT_904	Subject =~ /您好！节/
-describe CN_SUBJECT_904	Subject contains "您好！节"
-score CN_SUBJECT_904	0.360
-
-header CN_SUBJECT_905	Subject =~ /人机/
-describe CN_SUBJECT_905	Subject contains "人机"
-score CN_SUBJECT_905	0.300
-
-header CN_SUBJECT_909	Subject =~ /-北\/京/
-describe CN_SUBJECT_909	Subject contains "-北\/京"
-score CN_SUBJECT_909	0.360
-
-header CN_SUBJECT_911	Subject =~ /理财提供/
-describe CN_SUBJECT_911	Subject contains "理财提供"
-score CN_SUBJECT_911	0.300
-
-header CN_SUBJECT_912	Subject =~ /\[上海/
-describe CN_SUBJECT_912	Subject contains "\[上海"
-score CN_SUBJECT_912	0.300
-
-header CN_SUBJECT_913	Subject =~ /4，5月/
-describe CN_SUBJECT_913	Subject contains "4，5月"
-score CN_SUBJECT_913	0.300
-
-header CN_SUBJECT_914	Subject =~ /标准体重/
-describe CN_SUBJECT_914	Subject contains "标准体重"
-score CN_SUBJECT_914	0.300
-
-header CN_SUBJECT_915	Subject =~ /工厂设备/
-describe CN_SUBJECT_915	Subject contains "工厂设备"
-score CN_SUBJECT_915	0.300
-
-header CN_SUBJECT_920	Subject =~ /致负责人/
-describe CN_SUBJECT_920	Subject contains "致负责人"
-score CN_SUBJECT_920	0.069
-
-header CN_SUBJECT_921	Subject =~ /可以改变/
-describe CN_SUBJECT_921	Subject contains "可以改变"
-score CN_SUBJECT_921	0.300
-
-header CN_SUBJECT_924	Subject =~ /您就/
-describe CN_SUBJECT_924	Subject contains "您就"
-score CN_SUBJECT_924	0.300
-
-header CN_SUBJECT_925	Subject =~ /贺卡/
-describe CN_SUBJECT_925	Subject contains "贺卡"
-score CN_SUBJECT_925	0.240
-
-header CN_SUBJECT_930	Subject =~ /教学平台/
-describe CN_SUBJECT_930	Subject contains "教学平台"
-score CN_SUBJECT_930	0.300
-
-header CN_SUBJECT_931	Subject =~ /贵司/
-describe CN_SUBJECT_931	Subject contains "贵司"
-score CN_SUBJECT_931	0.329
-
-header CN_SUBJECT_932	Subject =~ /广告：/
-describe CN_SUBJECT_932	Subject contains "广告："
-score CN_SUBJECT_932	0.480
-
-header CN_SUBJECT_934	Subject =~ /生产计划/
-describe CN_SUBJECT_934	Subject contains "生产计划"
-score CN_SUBJECT_934	0.300
-
-header CN_SUBJECT_938	Subject =~ /器人/
-describe CN_SUBJECT_938	Subject contains "器人"
-score CN_SUBJECT_938	0.891
-
-header CN_SUBJECT_941	Subject =~ /-开-讲/
-describe CN_SUBJECT_941	Subject contains "-开-讲"
-score CN_SUBJECT_941	0.420
-
-header CN_SUBJECT_945	Subject =~ /训练营/
-describe CN_SUBJECT_945	Subject contains "训练营"
-score CN_SUBJECT_945	0.367
-
-header CN_SUBJECT_949	Subject =~ /征稿：/
-describe CN_SUBJECT_949	Subject contains "征稿："
-score CN_SUBJECT_949	0.360
-
-header CN_SUBJECT_950	Subject =~ /科技类/
-describe CN_SUBJECT_950	Subject contains "科技类"
-score CN_SUBJECT_950	0.360
-
-header CN_SUBJECT_954	Subject =~ /、医药/
-describe CN_SUBJECT_954	Subject contains "、医药"
-score CN_SUBJECT_954	0.300
-
-header CN_SUBJECT_957	Subject =~ /\/上-海/
-describe CN_SUBJECT_957	Subject contains "\/上-海"
-score CN_SUBJECT_957	0.420
-
-header CN_SUBJECT_959	Subject =~ /短信--/
-describe CN_SUBJECT_959	Subject contains "短信--"
-score CN_SUBJECT_959	0.300
-
-header CN_SUBJECT_961	Subject =~ /马小姐/
-describe CN_SUBJECT_961	Subject contains "马小姐"
-score CN_SUBJECT_961	0.300
-
-header CN_SUBJECT_963	Subject =~ /段！/
-describe CN_SUBJECT_963	Subject contains "段！"
-score CN_SUBJECT_963	0.300
-
-header CN_SUBJECT_964	Subject =~ /与关怀/
-describe CN_SUBJECT_964	Subject contains "与关怀"
-score CN_SUBJECT_964	0.300
-
-header CN_SUBJECT_965	Subject =~ /拓展与/
-describe CN_SUBJECT_965	Subject contains "拓展与"
-score CN_SUBJECT_965	0.300
-
-header CN_SUBJECT_966	Subject =~ /达公司/
-describe CN_SUBJECT_966	Subject contains "达公司"
-score CN_SUBJECT_966	0.001
-
-header CN_SUBJECT_967	Subject =~ /裕强/
-describe CN_SUBJECT_967	Subject contains "裕强"
-score CN_SUBJECT_967	0.185
-
-header CN_SUBJECT_969	Subject =~ /新手/
-describe CN_SUBJECT_969	Subject contains "新手"
-score CN_SUBJECT_969	0.300
-
-header CN_SUBJECT_970	Subject =~ /--客户/
-describe CN_SUBJECT_970	Subject contains "--客户"
-score CN_SUBJECT_970	0.300
-
-header CN_SUBJECT_971	Subject =~ /体重测量/
-describe CN_SUBJECT_971	Subject contains "体重测量"
-score CN_SUBJECT_971	0.300
-
-header CN_SUBJECT_972	Subject =~ /可代/
-describe CN_SUBJECT_972	Subject contains "可代"
-score CN_SUBJECT_972	0.047
-
-header CN_SUBJECT_973	Subject =~ /获取/
-describe CN_SUBJECT_973	Subject contains "获取"
-score CN_SUBJECT_973	0.240
-
-header CN_SUBJECT_974	Subject =~ /AD在线/
-describe CN_SUBJECT_974	Subject contains "AD在线"
-score CN_SUBJECT_974	0.300
-
-header CN_SUBJECT_975	Subject =~ /客户拓展/
-describe CN_SUBJECT_975	Subject contains "客户拓展"
-score CN_SUBJECT_975	0.300
-
-header CN_SUBJECT_977	Subject =~ /在线标准/
-describe CN_SUBJECT_977	Subject contains "在线标准"
-score CN_SUBJECT_977	0.300
-
-header CN_SUBJECT_980	Subject =~ /关怀的/
-describe CN_SUBJECT_980	Subject contains "关怀的"
-score CN_SUBJECT_980	0.300
-
-header CN_SUBJECT_984	Subject =~ /生活!/
-describe CN_SUBJECT_984	Subject contains "生活!"
-score CN_SUBJECT_984	0.240
-
-header CN_SUBJECT_986	Subject =~ /成交/
-describe CN_SUBJECT_986	Subject contains "成交"
-score CN_SUBJECT_986	0.300
-
-header CN_SUBJECT_993	Subject =~ /代理公司/
-describe CN_SUBJECT_993	Subject contains "代理公司"
-score CN_SUBJECT_993	0.274
-
-header CN_SUBJECT_996	Subject =~ /智通/
-describe CN_SUBJECT_996	Subject contains "智通"
-score CN_SUBJECT_996	0.145
-
-header CN_SUBJECT_997	Subject =~ /改变现在/
-describe CN_SUBJECT_997	Subject contains "改变现在"
-score CN_SUBJECT_997	0.300
-
-header CN_SUBJECT_1000	Subject =~ /论文和/
-describe CN_SUBJECT_1000	Subject contains "论文和"
-score CN_SUBJECT_1000	0.300
-
-header CN_SUBJECT_1001	Subject =~ /该如何/
-describe CN_SUBJECT_1001	Subject contains "该如何"
-score CN_SUBJECT_1001	1.500
-
-header CN_SUBJECT_1002	Subject =~ /辞退员工/
-describe CN_SUBJECT_1002	Subject contains "辞退员工"
-score CN_SUBJECT_1002	1.500
-
-header CN_SUBJECT_1003	Subject =~ /回执表/
-describe CN_SUBJECT_1003	Subject contains "回执表"
-score CN_SUBJECT_1003	0.500
-
-body CN_BODY_2	/有限公司/
-describe CN_BODY_2	Body contains "有限公司"
-score CN_BODY_2	0.001
-
-body CN_BODY_3	/发票/
-describe CN_BODY_3	Body contains "发票"
-score CN_BODY_3	0.055
-
-body CN_BODY_4	/广告/
-describe CN_BODY_4	Body contains "广告"
-score CN_BODY_4	0.001
-
-body CN_BODY_5	/销售/
-describe CN_BODY_5	Body contains "销售"
-score CN_BODY_5	0.287
-
-body CN_BODY_7	/运输/
-describe CN_BODY_7	Body contains "运输"
-score CN_BODY_7	0.036
-
-body CN_BODY_8	/优惠/
-describe CN_BODY_8	Body contains "优惠"
-score CN_BODY_8	0.001
-
-body CN_BODY_9	/建筑/
-describe CN_BODY_9	Body contains "建筑"
-score CN_BODY_9	0.001
-
-body CN_BODY_11	/商品/
-describe CN_BODY_11	Body contains "商品"
-score CN_BODY_11	0.383
-
-body CN_BODY_14	/代开/
-describe CN_BODY_14	Body contains "代开"
-score CN_BODY_14	1.655
-
-body CN_BODY_16	/联系人/
-describe CN_BODY_16	Body contains "联系人"
-score CN_BODY_16	0.281
-
-body CN_BODY_21	/实业/
-describe CN_BODY_21	Body contains "实业"
-score CN_BODY_21	0.034
-
-body CN_BODY_26	/贵公司/
-describe CN_BODY_26	Body contains "贵公司"
-score CN_BODY_26	2.160
-
-body CN_BODY_33	/地税/
-describe CN_BODY_33	Body contains "地税"
-score CN_BODY_33	0.099
-
-body CN_BODY_34	/进项/
-describe CN_BODY_34	Body contains "进项"
-score CN_BODY_34	0.074
-
-body CN_BODY_36	/付款/
-describe CN_BODY_36	Body contains "付款"
-score CN_BODY_36	0.832
-
-body CN_BODY_40	/安装/
-describe CN_BODY_40	Body contains "安装"
-score CN_BODY_40	0.001
-
-body CN_BODY_45	/验证/
-describe CN_BODY_45	Body contains "验证"
-score CN_BODY_45	0.001
-
-body CN_BODY_46	/来电/
-describe CN_BODY_46	Body contains "来电"
-score CN_BODY_46	0.003
-
-body CN_BODY_49	/点数/
-describe CN_BODY_49	Body contains "点数"
-score CN_BODY_49	0.380
-
-body CN_BODY_51	/大小/
-describe CN_BODY_51	Body contains "大小"
-score CN_BODY_51	0.016
-
-body CN_BODY_52	/海关/
-describe CN_BODY_52	Body contains "海关"
-score CN_BODY_52	0.189
-
-body CN_BODY_61	/雄厚/
-describe CN_BODY_61	Body contains "雄厚"
-score CN_BODY_61	0.005
-
-body CN_BODY_69	/经理\//
-describe CN_BODY_69	Body contains "经理\/"
-score CN_BODY_69	0.102
-
-body CN_BODY_77	/详情/
-describe CN_BODY_77	Body contains "详情"
-score CN_BODY_77	0.480
-
-body CN_BODY_79	/缴款/
-describe CN_BODY_79	Body contains "缴款"
-score CN_BODY_79	2.513
-
-body CN_BODY_81	/我司/
-describe CN_BODY_81	Body contains "我司"
-score CN_BODY_81	2.400
-
-body CN_BODY_85	/租赁/
-describe CN_BODY_85	Body contains "租赁"
-score CN_BODY_85	0.410
-
-body CN_BODY_89	/\(经理/
-describe CN_BODY_89	Body contains "\(经理"
-score CN_BODY_89	1.669
-
-body CN_BODY_91	/查询/
-describe CN_BODY_91	Body contains "查询"
-score CN_BODY_91	0.001
-
-body CN_BODY_96	/长期有效/
-describe CN_BODY_96	Body contains "长期有效"
-score CN_BODY_96	0.005
-
-body CN_BODY_97	/完成不了/
-describe CN_BODY_97	Body contains "完成不了"
-score CN_BODY_97	0.004
-
-body CN_BODY_98	/税务/
-describe CN_BODY_98	Body contains "税务"
-score CN_BODY_98	0.001
-
-body CN_BODY_99	/贵司/
-describe CN_BODY_99	Body contains "贵司"
-score CN_BODY_99	2.700
-
-body CN_BODY_103	/信息长期/
-describe CN_BODY_103	Body contains "信息长期"
-score CN_BODY_103	2.420
-
-body CN_BODY_105	/不了每月/
-describe CN_BODY_105	Body contains "不了每月"
-score CN_BODY_105	2.441
-
-body CN_BODY_106	/真伪/
-describe CN_BODY_106	Body contains "真伪"
-score CN_BODY_106	0.013
-
-body CN_BODY_112	/额度/
-describe CN_BODY_112	Body contains "额度"
-score CN_BODY_112	0.080
-
-body CN_BODY_116	/打扰/
-describe CN_BODY_116	Body contains "打扰"
-score CN_BODY_116	0.059
-
-body CN_BODY_124	/抵扣/
-describe CN_BODY_124	Body contains "抵扣"
-score CN_BODY_124	2.121
-
-body CN_BODY_126	/每月有/
-describe CN_BODY_126	Body contains "每月有"
-score CN_BODY_126	0.020
-
-body CN_BODY_129	/深圳/
-describe CN_BODY_129	Body contains "深圳"
-score CN_BODY_129	0.001
-
-body CN_BODY_130	/与贵/
-describe CN_BODY_130	Body contains "与贵"
-score CN_BODY_130	0.001
-
-body CN_BODY_134	/绝对是真/
-describe CN_BODY_134	Body contains "绝对是真"
-score CN_BODY_134	0.175
-
-body CN_BODY_135	/联系电话/
-describe CN_BODY_135	Body contains "联系电话"
-score CN_BODY_135	0.001
-
-body CN_BODY_137	/票！/
-describe CN_BODY_137	Body contains "票！"
-score CN_BODY_137	0.209
-
-body CN_BODY_146	/其它服务/
-describe CN_BODY_146	Body contains "其它服务"
-score CN_BODY_146	2.580
-
-body CN_BODY_151	/商讨/
-describe CN_BODY_151	Body contains "商讨"
-score CN_BODY_151	0.018
-
-body CN_BODY_154	/餐饮/
-describe CN_BODY_154	Body contains "餐饮"
-score CN_BODY_154	0.034
-
-body CN_BODY_155	/请电/
-describe CN_BODY_155	Body contains "请电"
-score CN_BODY_155	0.038
-
-body CN_BODY_164	/国税/
-describe CN_BODY_164	Body contains "国税"
-score CN_BODY_164	0.064
-
-body CN_BODY_167	/票据/
-describe CN_BODY_167	Body contains "票据"
-score CN_BODY_167	0.027
-
-body CN_BODY_180	/合作！/
-describe CN_BODY_180	Body contains "合作！"
-score CN_BODY_180	0.905
-
-body CN_BODY_183	/可以根据/
-describe CN_BODY_183	Body contains "可以根据"
-score CN_BODY_183	0.329
-
-body CN_BODY_186	/）您/
-describe CN_BODY_186	Body contains "）您"
-score CN_BODY_186	0.790
-
-body CN_BODY_191	/服务业/
-describe CN_BODY_191	Body contains "服务业"
-score CN_BODY_191	0.036
-
-body CN_BODY_197	/本公司/
-describe CN_BODY_197	Body contains "本公司"
-score CN_BODY_197	0.313
-
-body CN_BODY_201	/税率/
-describe CN_BODY_201	Body contains "税率"
-score CN_BODY_201	0.029
-
-body CN_BODY_224	/传真/
-describe CN_BODY_224	Body contains "传真"
-score CN_BODY_224	0.105
-
-body CN_BODY_225	/顺祝/
-describe CN_BODY_225	Body contains "顺祝"
-score CN_BODY_225	1.117
-
-body CN_BODY_228	/尊敬的/
-describe CN_BODY_228	Body contains "尊敬的"
-score CN_BODY_228	0.202
-
-body CN_BODY_229	/洽商/
-describe CN_BODY_229	Body contains "洽商"
-score CN_BODY_229	0.396
-
-body CN_BODY_230	/或担心/
-describe CN_BODY_230	Body contains "或担心"
-score CN_BODY_230	0.039
-
-body CN_BODY_240	/好：/
-describe CN_BODY_240	Body contains "好："
-score CN_BODY_240	0.340
-
-body CN_BODY_249	/有效，如/
-describe CN_BODY_249	Body contains "有效，如"
-score CN_BODY_249	0.077
-
-body CN_BODY_260	/、其它/
-describe CN_BODY_260	Body contains "、其它"
-score CN_BODY_260	0.010
-
-body CN_BODY_263	/，如须/
-describe CN_BODY_263	Body contains "，如须"
-score CN_BODY_263	0.001
-
-body CN_BODY_265	/现完成/
-describe CN_BODY_265	Body contains "现完成"
-score CN_BODY_265	0.020
-
-body CN_BODY_267	/合作一次/
-describe CN_BODY_267	Body contains "合作一次"
-score CN_BODY_267	0.069
-
-body CN_BODY_269	/担心，可/
-describe CN_BODY_269	Body contains "担心，可"
-score CN_BODY_269	0.002
-
-body CN_BODY_271	/彼此合作/
-describe CN_BODY_271	Body contains "彼此合作"
-score CN_BODY_271	0.028
-
-body CN_BODY_272	/全国各地/
-describe CN_BODY_272	Body contains "全国各地"
-score CN_BODY_272	0.009
-
-body CN_BODY_274	/较多现/
-describe CN_BODY_274	Body contains "较多现"
-score CN_BODY_274	0.136
-
-body CN_BODY_276	/ 人：/
-describe CN_BODY_276	Body contains " 人："
-score CN_BODY_276	0.035
-
-body CN_BODY_287	/或到/
-describe CN_BODY_287	Body contains "或到"
-score CN_BODY_287	0.002
-
-body CN_BODY_293	/东莞/
-describe CN_BODY_293	Body contains "东莞"
-score CN_BODY_293	0.147
-
-body CN_BODY_302	/洽谈/
-describe CN_BODY_302	Body contains "洽谈"
-score CN_BODY_302	0.803
-
-body CN_BODY_308	/或我/
-describe CN_BODY_308	Body contains "或我"
-score CN_BODY_308	0.005
-
-body CN_BODY_318	/互惠/
-describe CN_BODY_318	Body contains "互惠"
-score CN_BODY_318	0.001
-
-body CN_BODY_350	/互利/
-describe CN_BODY_350	Body contains "互利"
-score CN_BODY_350	0.003
-
-body CN_BODY_358	/或合作/
-describe CN_BODY_358	Body contains "或合作"
-score CN_BODY_358	0.001
-
-body CN_BODY_359	/会与/
-describe CN_BODY_359	Body contains "会与"
-score CN_BODY_359	0.011
-
-body CN_BODY_368	/，必成/
-describe CN_BODY_368	Body contains "，必成"
-score CN_BODY_368	0.001
-
-body CN_BODY_369	/一次，必/
-describe CN_BODY_369	Body contains "一次，必"
-score CN_BODY_369	0.494
-
-body CN_BODY_373	/多年一直/
-describe CN_BODY_373	Body contains "多年一直"
-score CN_BODY_373	0.002
-
-body CN_BODY_376	/成立多年/
-describe CN_BODY_376	Body contains "成立多年"
-score CN_BODY_376	0.123
-
-body CN_BODY_389	/6%左右/
-describe CN_BODY_389	Body contains "6%左右"
-score CN_BODY_389	0.001
-
-body CN_BODY_390	/司合作/
-describe CN_BODY_390	Body contains "司合作"
-score CN_BODY_390	0.353
-
-body CN_BODY_407	/兴隆/
-describe CN_BODY_407	Body contains "兴隆"
-score CN_BODY_407	1.195
-
-body CN_BODY_431	/开票/
-describe CN_BODY_431	Body contains "开票"
-score CN_BODY_431	0.460
-
-body CN_BODY_456	/坚持以“/
-describe CN_BODY_456	Body contains "坚持以“"
-score CN_BODY_456	0.012
-
-body CN_BODY_463	/、服务/
-describe CN_BODY_463	Body contains "、服务"
-score CN_BODY_463	0.316
-
-body CN_BODY_476	/可上网/
-describe CN_BODY_476	Body contains "可上网"
-score CN_BODY_476	0.055
-
-body CN_BODY_484	/左右）/
-describe CN_BODY_484	Body contains "左右）"
-score CN_BODY_484	0.001
-
-body CN_BODY_491	/经理、/
-describe CN_BODY_491	Body contains "经理、"
-score CN_BODY_491	0.508
-
-body CN_BODY_495	/广州市/
-describe CN_BODY_495	Body contains "广州市"
-score CN_BODY_495	0.779
-
-body CN_BODY_504	/广州、/
-describe CN_BODY_504	Body contains "广州、"
-score CN_BODY_504	0.044
-
-body CN_BODY_526	/作为公司/
-describe CN_BODY_526	Body contains "作为公司"
-score CN_BODY_526	0.036
-
-body CN_BODY_533	/税、/
-describe CN_BODY_533	Body contains "税、"
-score CN_BODY_533	0.207
-
-body CN_BODY_552	/真正做到/
-describe CN_BODY_552	Body contains "真正做到"
-score CN_BODY_552	0.044
-
-body CN_BODY_574	/咨询、/
-describe CN_BODY_574	Body contains "咨询、"
-score CN_BODY_574	0.105
-
-body CN_BODY_588	/1\.5%左右/
-describe CN_BODY_588	Body contains "1\.5%左右"
-score CN_BODY_588	2.220
-
-body CN_BODY_589	/、必/
-describe CN_BODY_589	Body contains "、必"
-score CN_BODY_589	1.020
-
-body CN_BODY_602	/余额/
-describe CN_BODY_602	Body contains "余额"
-score CN_BODY_602	0.006
-
-body CN_BODY_604	/小时业务/
-describe CN_BODY_604	Body contains "小时业务"
-score CN_BODY_604	0.657
-
-body CN_BODY_620	/树立公司/
-describe CN_BODY_620	Body contains "树立公司"
-score CN_BODY_620	0.687
-
-body CN_BODY_656	/代征/
-describe CN_BODY_656	Body contains "代征"
-score CN_BODY_656	0.087
-
-body CN_BODY_657	/\(24小时/
-describe CN_BODY_657	Body contains "\(24小时"
-score CN_BODY_657	1.219
-
-body CN_BODY_659	/商祺！/
-describe CN_BODY_659	Body contains "商祺！"
-score CN_BODY_659	2.520
-
-body CN_BODY_688	/，敬请/
-describe CN_BODY_688	Body contains "，敬请"
-score CN_BODY_688	0.120
-
-body CN_BODY_696	/进销存/
-describe CN_BODY_696	Body contains "进销存"
-score CN_BODY_696	1.740
-
-body CN_BODY_701	/企业直接/
-describe CN_BODY_701	Body contains "企业直接"
-score CN_BODY_701	0.031
-
-body CN_BODY_702	/票额/
-describe CN_BODY_702	Body contains "票额"
-score CN_BODY_702	0.208
-
-body CN_BODY_703	/无标题/
-describe CN_BODY_703	Body contains "无标题"
-score CN_BODY_703	1.680
-
-body CN_BODY_707	/。欢迎/
-describe CN_BODY_707	Body contains "。欢迎"
-score CN_BODY_707	0.060
-
-body CN_BODY_708	/茶点/
-describe CN_BODY_708	Body contains "茶点"
-score CN_BODY_708	1.380
-
-body CN_BODY_711	/公司现有/
-describe CN_BODY_711	Body contains "公司现有"
-score CN_BODY_711	0.050
-
-body CN_BODY_715	/\)您好/
-describe CN_BODY_715	Body contains "\)您好"
-score CN_BODY_715	1.740
-
-body CN_BODY_717	/标题文档/
-describe CN_BODY_717	Body contains "标题文档"
-score CN_BODY_717	1.680
-
-body CN_BODY_719	/中心作为/
-describe CN_BODY_719	Body contains "中心作为"
-score CN_BODY_719	0.007
-
-body CN_BODY_721	/案例分析/
-describe CN_BODY_721	Body contains "案例分析"
-score CN_BODY_721	0.780
-
-body CN_BODY_728	/：______/
-describe CN_BODY_728	Body contains "：______"
-score CN_BODY_728	1.740
-
-body CN_BODY_739	/如需/
-describe CN_BODY_739	Body contains "如需"
-score CN_BODY_739	0.412
-
-body CN_BODY_740	/商谈/
-describe CN_BODY_740	Body contains "商谈"
-score CN_BODY_740	0.166
-
-body CN_BODY_787	/惠的/
-describe CN_BODY_787	Body contains "惠的"
-score CN_BODY_787	0.001
-
-body CN_BODY_794	/、培训/
-describe CN_BODY_794	Body contains "、培训"
-score CN_BODY_794	0.013
-
-body CN_BODY_795	/移动电话/
-describe CN_BODY_795	Body contains "移动电话"
-score CN_BODY_795	0.811
-
-body CN_BODY_806	/等其它/
-describe CN_BODY_806	Body contains "等其它"
-score CN_BODY_806	0.006
-
-body CN_BODY_808	/合作。/
-describe CN_BODY_808	Body contains "合作。"
-score CN_BODY_808	0.070
-
-body CN_BODY_810	/对外代/
-describe CN_BODY_810	Body contains "对外代"
-score CN_BODY_810	2.220
-
-body CN_BODY_811	/：李/
-describe CN_BODY_811	Body contains "：李"
-score CN_BODY_811	0.060
-
-body CN_BODY_824	/公司本着/
-describe CN_BODY_824	Body contains "公司本着"
-score CN_BODY_824	0.561
-
-body CN_BODY_826	/敬请原谅/
-describe CN_BODY_826	Body contains "敬请原谅"
-score CN_BODY_826	1.405
-
-body CN_BODY_834	/联 系/
-describe CN_BODY_834	Body contains "联 系"
-score CN_BODY_834	0.335
-
-body CN_BODY_838	/进出口/
-describe CN_BODY_838	Body contains "进出口"
-score CN_BODY_838	0.005
-
-body CN_BODY_839	/公司实力/
-describe CN_BODY_839	Body contains "公司实力"
-score CN_BODY_839	0.013
-
-body CN_BODY_853	/所开/
-describe CN_BODY_853	Body contains "所开"
-score CN_BODY_853	0.016
-
-body CN_BODY_858	/直接开出/
-describe CN_BODY_858	Body contains "直接开出"
-score CN_BODY_858	1.365
-
-body CN_BODY_864	/单位名称/
-describe CN_BODY_864	Body contains "单位名称"
-score CN_BODY_864	0.960
-
-body CN_BODY_865	/等按/
-describe CN_BODY_865	Body contains "等按"
-score CN_BODY_865	0.003
-
-body CN_BODY_866	/为贵/
-describe CN_BODY_866	Body contains "为贵"
-score CN_BODY_866	0.002
-
-body CN_BODY_869	/现有全国/
-describe CN_BODY_869	Body contains "现有全国"
-score CN_BODY_869	1.620
-
-body CN_BODY_874	/开或/
-describe CN_BODY_874	Body contains "开或"
-score CN_BODY_874	0.019
-
-body CN_BODY_879	/：　/
-describe CN_BODY_879	Body contains "：　"
-score CN_BODY_879	0.360
-
-body CN_BODY_895	/集团、/
-describe CN_BODY_895	Body contains "集团、"
-score CN_BODY_895	0.306
-
-body CN_BODY_916	/城市有/
-describe CN_BODY_916	Body contains "城市有"
-score CN_BODY_916	0.005
-
-body CN_BODY_928	/给贵/
-describe CN_BODY_928	Body contains "给贵"
-score CN_BODY_928	0.817
-
-body CN_BODY_931	/转帐/
-describe CN_BODY_931	Body contains "转帐"
-score CN_BODY_931	0.143
-
-body CN_BODY_946	/所有行业/
-describe CN_BODY_946	Body contains "所有行业"
-score CN_BODY_946	1.462
-
-body CN_BODY_953	/公司承诺/
-describe CN_BODY_953	Body contains "公司承诺"
-score CN_BODY_953	0.346
-
-body CN_BODY_972	/咨询！/
-describe CN_BODY_972	Body contains "咨询！"
-score CN_BODY_972	1.067
-
-body CN_BODY_982	/电脑版/
-describe CN_BODY_982	Body contains "电脑版"
-score CN_BODY_982	0.376
-
-body CN_BODY_992	/\, 真正/
-describe CN_BODY_992	Body contains "\, 真正"
-score CN_BODY_992	0.143
-
-body CN_BODY_998	/用到的话/
-describe CN_BODY_998	Body contains "用到的话"
-score CN_BODY_998	1.560
-
-body CN_BODY_999	/附件转人力资源部/
-describe CN_BODY_999	Body "附件转人力资源部"
-score CN_BODY_999	1.560
-
-body CN_BODY_1000	/诸如此类的问题/
-describe CN_BODY_1000	Body "诸如此类的问题"
-score CN_BODY_1000	1.500
-
-body CN_BODY_1001	/附件请您参考/
-describe CN_BODY_1001	Body "附件请您参考"
-score CN_BODY_1001	1.500
-
-body CN_BODY_1002	/报名咨询/
-describe CN_BODY_1002	Body "报名咨询"
-score CN_BODY_1002	3.500
-
-rawbody CN_BODY_1003	/mailto:/
-describe CN_BODY_1003	Body "mailto:"
-score CN_BODY_1003	1.000
-
-body CN_BODY_1004	/主办方/
-describe CN_BODY_1004	Body "主办方"
-score CN_BODY_1004	1.000
-
-body CN_BODY_1005	/费用：/
-describe CN_BODY_1005	Body "费用："
-score CN_BODY_1005	3.000
-
-body CN_BODY_1006	/费用包括/
-describe CN_BODY_1006	Body "费用包括"
-score CN_BODY_1006	3.000
-
-body CN_BODY_1007	/如不需/
-describe CN_BODY_1007	Body "如不需"
-score CN_BODY_1007	2.000
-
-body CN_BODY_1008	/元\/人/
-describe CN_BODY_1008	Body "元\/人"
-score CN_BODY_1008	3.000
-
-body CN_BODY_1008	/课-程/
-describe CN_BODY_1008	Body "课-程"
-score CN_BODY_1008	2.000
-
-body CN_BODY_1009	/CONFIDENTIALITY NOTICE/
-describe CN_BODY_1009	Body "CONFIDENTIALITY NOTICE"
-score CN_BODY_1009	1.000
-
-body CN_BODY_1010	/迅速提升/
-describe CN_BODY_1010	Body "迅速提升"
-score CN_BODY_1010	2.000
-
-body CN_BODY_1011	/新政解读/
-describe CN_BODY_1011	Body "新政解读"
-score CN_BODY_1011	3.000
-
-body CN_BODY_1012	/人民币/
-describe CN_BODY_1012	Body "人民币"
-score CN_BODY_1012	0.500
+header ZHCN_BLACK_SUBJECT_YOUHUI    Subject =~ /优惠/
+describe ZHCN_BLACK_SUBJECT_YOUHUI  Subject contains "优惠"
+score ZHCN_BLACK_SUBJECT_YOUHUI 1.2
+
+header ZHCN_BLACK_SUBJECT_HEZUO Subject =~ /合作/
+describe ZHCN_BLACK_SUBJECT_HEZUO   Subject contains "合作"
+score ZHCN_BLACK_SUBJECT_HEZUO  0.2
+
+header ZHCN_BLACK_SUBJECT_FAPIAO    Subject =~ /发票/
+describe ZHCN_BLACK_SUBJECT_FAPIAO  Subject contains "发票"
+score ZHCN_BLACK_SUBJECT_FAPIAO 0.4
+
+header ZHCN_BLACK_SUBJECT_SHIYE Subject =~ /实业/
+describe ZHCN_BLACK_SUBJECT_SHIYE   Subject contains "实业"
+score ZHCN_BLACK_SUBJECT_SHIYE  1.3
+
+header ZHCN_BLACK_SUBJECT_DAIKAI    Subject =~ /代开/
+describe ZHCN_BLACK_SUBJECT_DAIKAI  Subject contains "代开"
+score ZHCN_BLACK_SUBJECT_DAIKAI 2.5
+
+header ZHCN_BLACK_SUBJECT_PIAO  Subject =~ /票/
+describe ZHCN_BLACK_SUBJECT_PIAO    Subject contains "票"
+score ZHCN_BLACK_SUBJECT_PIAO   0.1
+
+header ZHCN_BLACK_SUBJECT_GELEI Subject =~ /各类/
+describe ZHCN_BLACK_SUBJECT_GELEI   Subject contains "各类"
+score ZHCN_BLACK_SUBJECT_GELEI  0.1
+
+header ZHCN_BLACK_SUBJECT_GEZHONG   Subject =~ /各种/
+describe ZHCN_BLACK_SUBJECT_GEZHONG Subject contains "各类"
+score ZHCN_BLACK_SUBJECT_GEZHONG    0.1
+
+header ZHCN_BLACK_SUBJECT_YUNZUO    Subject =~ /运作/
+describe ZHCN_BLACK_SUBJECT_YUNZUO  Subject contains "运作"
+score ZHCN_BLACK_SUBJECT_YUNZUO 0.5
+
+header ZHCN_BLACK_SUBJECT_JIESHENG  Subject =~ /节省/
+describe ZHCN_BLACK_SUBJECT_JIESHENG    Subject contains "节省"
+score ZHCN_BLACK_SUBJECT_JIESHENG   1.5
+
+header ZHCN_BLACK_SUBJECT_SHIYI Subject =~ /事宜/
+describe ZHCN_BLACK_SUBJECT_SHIYI   Subject contains "事宜"
+score ZHCN_BLACK_SUBJECT_SHIYI  0.2
+
+header ZHCN_BLACK_SUBJECT_MAOYI Subject =~ /贸易/
+describe ZHCN_BLACK_SUBJECT_MAOYI   Subject contains "贸易"
+score ZHCN_BLACK_SUBJECT_MAOYI  0.5
+
+header ZHCN_BLACK_SUBJECT_HULI  Subject =~ /互利/
+describe ZHCN_BLACK_SUBJECT_HULI    Subject contains "互利"
+score ZHCN_BLACK_SUBJECT_HULI   1.0
+
+header ZHCN_BLACK_SUBJECT_HUHUI Subject =~ /互惠/
+describe ZHCN_BLACK_SUBJECT_HUHUI   Subject contains "互惠"
+score ZHCN_BLACK_SUBJECT_HUHUI  1.0
+
+header ZHCN_BLACK_SUBJECT_CAIWU Subject =~ /财务/
+describe ZHCN_BLACK_SUBJECT_CAIWU   Subject contains "财务"
+score ZHCN_BLACK_SUBJECT_CAIWU  0.1
+
+header ZHCN_BLACK_SUBJECT_SHANGWU   Subject =~ /商务/
+describe ZHCN_BLACK_SUBJECT_SHANGWU Subject contains "商务"
+score ZHCN_BLACK_SUBJECT_SHANGWU    0.8
+
+header ZHCN_BLACK_SUBJECT_SHUI  Subject =~ /税/
+describe ZHCN_BLACK_SUBJECT_SHUI    Subject contains "税"
+score ZHCN_BLACK_SUBJECT_SHUI   0.2
+
+header ZHCN_BLACK_SUBJECT_SHUIWU    Subject =~ /税务/
+describe ZHCN_BLACK_SUBJECT_SHUIWU  Subject contains "税务"
+score ZHCN_BLACK_SUBJECT_SHUIWU 0.4
+
+header ZHCN_BLACK_SUBJECT_BISHUI    Subject =~ /避税/
+describe ZHCN_BLACK_SUBJECT_BISHUI  Subject contains "避税"
+score ZHCN_BLACK_SUBJECT_BISHUI 1.5
+
+header ZHCN_BLACK_SUBJECT_JIUDIAN   Subject =~ /酒店/
+describe ZHCN_BLACK_SUBJECT_JIUDIAN Subject contains "酒店"
+score ZHCN_BLACK_SUBJECT_JIUDIAN    0.8
+
+header ZHCN_BLACK_SUBJECT_CAIGOU    Subject =~ /采购/
+describe ZHCN_BLACK_SUBJECT_CAIGOU  Subject contains "采购"
+score ZHCN_BLACK_SUBJECT_CAIGOU 1.0
+
+header ZHCN_BLACK_SUBJECT_JIQIAO    Subject =~ /技巧/
+describe ZHCN_BLACK_SUBJECT_JIQIAO  Subject contains "技巧"
+score ZHCN_BLACK_SUBJECT_JIQIAO 0.1
+
+header ZHCN_BLACK_SUBJECT_YANXIU    Subject =~ /研修/
+describe ZHCN_BLACK_SUBJECT_YANXIU  Subject contains "研修"
+score ZHCN_BLACK_SUBJECT_YANXIU 1.2
+
+header ZHCN_BLACK_SUBJECT_JINXIU    Subject =~ /进修/
+describe ZHCN_BLACK_SUBJECT_JINXIU  Subject contains "进修"
+score ZHCN_BLACK_SUBJECT_JINXIU 1.2
+
+header ZHCN_BLACK_SUBJECT_HUIYI Subject =~ /会议/
+describe ZHCN_BLACK_SUBJECT_HUIYI   Subject contains "会议"
+score ZHCN_BLACK_SUBJECT_HUIYI  0.2
+
+header ZHCN_BLACK_SUBJECT_NIN   Subject =~ /您/
+describe ZHCN_BLACK_SUBJECT_NIN Subject contains "您"
+score ZHCN_BLACK_SUBJECT_NIN    0.1
+
+header ZHCN_BLACK_SUBJECT_JIADIAN   Subject =~ /家电/
+describe ZHCN_BLACK_SUBJECT_JIADIAN Subject contains "家电"
+score ZHCN_BLACK_SUBJECT_JIADIAN    1.2
+
+header ZHCN_BLACK_SUBJECT_CHAODI    Subject =~ /超低/
+describe ZHCN_BLACK_SUBJECT_CHAODI  Subject contains "超低"
+score ZHCN_BLACK_SUBJECT_CHAODI 0.8
+
+header ZHCN_BLACK_SUBJECT_JIAGE Subject =~ /价格/
+describe ZHCN_BLACK_SUBJECT_JIAGE   Subject contains "价格"
+score ZHCN_BLACK_SUBJECT_JIAGE  0.2
+
+header ZHCN_BLACK_SUBJECT_FANGJIA   Subject =~ /房价/
+describe ZHCN_BLACK_SUBJECT_FANGJIA Subject contains "房价"
+score ZHCN_BLACK_SUBJECT_FANGJIA    1.1
+
+header ZHCN_BLACK_SUBJECT_XIANGSHOU Subject =~ /享受/
+describe ZHCN_BLACK_SUBJECT_XIANGSHOU   Subject contains "享受"
+score ZHCN_BLACK_SUBJECT_XIANGSHOU  1.3
+
+header ZHCN_BLACK_SUBJECT_QUANGUO   Subject =~ /全国/
+describe ZHCN_BLACK_SUBJECT_QUANGUO Subject contains "全国"
+score ZHCN_BLACK_SUBJECT_QUANGUO    0.3
+
+header ZHCN_BLACK_SUBJECT_QIANZAI   Subject =~ /潜在/
+describe ZHCN_BLACK_SUBJECT_QIANZAI Subject contains "潜在"
+score ZHCN_BLACK_SUBJECT_QIANZAI    1.3
+
+header ZHCN_BLACK_SUBJECT_TEJIA Subject =~ /特价/
+describe ZHCN_BLACK_SUBJECT_TEJIA   Subject contains "特价"
+score ZHCN_BLACK_SUBJECT_TEJIA  1.0
+
+header ZHCN_BLACK_SUBJECT_PIAOJU    Subject =~ /票据/
+describe ZHCN_BLACK_SUBJECT_PIAOJU  Subject contains "票据"
+score ZHCN_BLACK_SUBJECT_PIAOJU 0.3
+
+header ZHCN_BLACK_SUBJECT_YUNIN Subject =~ /与您/
+describe ZHCN_BLACK_SUBJECT_YUNIN   Subject contains "与您"
+score ZHCN_BLACK_SUBJECT_YUNIN  0.5
+
+header ZHCN_BLACK_SUBJECT_JINGLI    Subject =~ /经理/
+describe ZHCN_BLACK_SUBJECT_JINGLI  Subject contains "经理"
+score ZHCN_BLACK_SUBJECT_JINGLI 0.1
+
+header ZHCN_BLACK_SUBJECT_FUZEREN   Subject =~ /负责人/
+describe ZHCN_BLACK_SUBJECT_FUZEREN Subject contains "负责人"
+score ZHCN_BLACK_SUBJECT_FUZEREN    0.600
+
+header ZHCN_BLACK_SUBJECT_BAOGUAN   Subject =~ /报关/
+describe ZHCN_BLACK_SUBJECT_BAOGUAN Subject contains "报关"
+score ZHCN_BLACK_SUBJECT_BAOGUAN    1.2
+
+header ZHCN_BLACK_SUBJECT_HAIGUAN   Subject =~ /海关/
+describe ZHCN_BLACK_SUBJECT_HAIGUAN Subject contains "海关"
+score ZHCN_BLACK_SUBJECT_HAIGUAN    1.0
+
+header ZHCN_BLACK_SUBJECT_GUANGGAO  Subject =~ /广告/
+describe ZHCN_BLACK_SUBJECT_GUANGGAO    Subject contains "广告"
+score ZHCN_BLACK_SUBJECT_GUANGGAO   1.0
+
+header ZHCN_BLACK_SUBJECT_CUXIAO    Subject =~ /促销/
+describe ZHCN_BLACK_SUBJECT_CUXIAO  Subject contains "促销"
+score ZHCN_BLACK_SUBJECT_CUXIAO 1.0
+
+header ZHCN_BLACK_SUBJECT_WEIXIU    Subject =~ /维修/
+describe ZHCN_BLACK_SUBJECT_WEIXIU  Subject contains "维修"
+score ZHCN_BLACK_SUBJECT_WEIXIU 0.600
+
+header ZHCN_BLACK_SUBJECT_GONGYING  Subject =~ /供应/
+describe ZHCN_BLACK_SUBJECT_GONGYING    Subject contains "供应"
+score ZHCN_BLACK_SUBJECT_GONGYING   1.0
+
+header ZHCN_BLACK_SUBJECT_ZIYUAN    Subject =~ /资源/
+describe ZHCN_BLACK_SUBJECT_ZIYUAN  Subject contains "资源"
+score ZHCN_BLACK_SUBJECT_ZIYUAN 1.0
+
+header ZHCN_BLACK_SUBJECT_CAIFU Subject =~ /财富/
+describe ZHCN_BLACK_SUBJECT_CAIFU   Subject contains "财富"
+score ZHCN_BLACK_SUBJECT_CAIFU  1.2
+
+header ZHCN_BLACK_SUBJECT_QICAI Subject =~ /器材/
+describe ZHCN_BLACK_SUBJECT_QICAI   Subject contains "器材"
+score ZHCN_BLACK_SUBJECT_QICAI  1.2
+
+header ZHCN_BLACK_SUBJECT_JINKOU    Subject =~ /进口/
+describe ZHCN_BLACK_SUBJECT_JINKOU  Subject contains "进口"
+score ZHCN_BLACK_SUBJECT_JINKOU 1.1
+
+header ZHCN_BLACK_SUBJECT_CHUKOU    Subject =~ /出口/
+describe ZHCN_BLACK_SUBJECT_CHUKOU  Subject contains "出口"
+score ZHCN_BLACK_SUBJECT_CHUKOU 1.1
+
+header ZHCN_BLACK_SUBJECT_JINCHUKOU Subject =~ /进出口/
+describe ZHCN_BLACK_SUBJECT_JINCHUKOU   Subject contains "出口"
+score ZHCN_BLACK_SUBJECT_JINCHUKOU  1.1
+
+header ZHCN_BLACK_SUBJECT_MIANFEI   Subject =~ /免费/
+describe ZHCN_BLACK_SUBJECT_MIANFEI Subject contains "免费"
+score ZHCN_BLACK_SUBJECT_MIANFEI    0.2
+
+header ZHCN_BLACK_SUBJECT_MIANFEIZHUCE  Subject =~ /免费注册/
+describe ZHCN_BLACK_SUBJECT_MIANFEIZHUCE    Subject contains "免费注册"
+score ZHCN_BLACK_SUBJECT_MIANFEIZHUCE   1.1
+
+header ZHCN_BLACK_SUBJECT_GONGSI    Subject =~ /公司/
+describe ZHCN_BLACK_SUBJECT_GONGSI  Subject contains "公司"
+score ZHCN_BLACK_SUBJECT_GONGSI 0.4
+
+header ZHCN_BLACK_SUBJECT_SHIZHAN   Subject =~ /实战/
+describe ZHCN_BLACK_SUBJECT_SHIZHAN Subject contains "实战"
+score ZHCN_BLACK_SUBJECT_SHIZHAN    1.1
+
+header ZHCN_BLACK_SUBJECT_DABAI Subject =~ /打败/
+describe ZHCN_BLACK_SUBJECT_DABAI   Subject contains "打败"
+score ZHCN_BLACK_SUBJECT_DABAI  0.8
+
+header ZHCN_BLACK_SUBJECT_JINZAI    Subject =~ /尽在/
+describe ZHCN_BLACK_SUBJECT_JINZAI  Subject contains "尽在"
+score ZHCN_BLACK_SUBJECT_JINZAI 0.8
+
+header ZHCN_BLACK_SUBJECT_GUANLI    Subject =~ /管理/
+describe ZHCN_BLACK_SUBJECT_GUANLI  Subject contains "管理"
+score ZHCN_BLACK_SUBJECT_GUANLI 0.9
+
+header ZHCN_BLACK_SUBJECT_JINENG    Subject =~ /技能/
+describe ZHCN_BLACK_SUBJECT_JINENG  Subject contains "技能"
+score ZHCN_BLACK_SUBJECT_JINENG 0.1
+
+header ZHCN_BLACK_SUBJECT_HUIFU Subject =~ /回复/
+describe ZHCN_BLACK_SUBJECT_HUIFU   Subject contains "回复"
+score ZHCN_BLACK_SUBJECT_HUIFU  0.1
+
+header ZHCN_BLACK_SUBJECT_QIYE  Subject =~ /企业/
+describe ZHCN_BLACK_SUBJECT_QIYE    Subject contains "企业"
+score ZHCN_BLACK_SUBJECT_QIYE   0.4
+
+header ZHCN_BLACK_SUBJECT_FUKUAN    Subject =~ /付款/
+describe ZHCN_BLACK_SUBJECT_FUKUAN  Subject contains "付款"
+score ZHCN_BLACK_SUBJECT_FUKUAN 1.0
+
+header ZHCN_BLACK_SUBJECT_TISHENG   Subject =~ /提升/
+describe ZHCN_BLACK_SUBJECT_TISHENG Subject contains "提升"
+score ZHCN_BLACK_SUBJECT_TISHENG    0.8
+
+header ZHCN_BLACK_SUBJECT_JIANGDI   Subject =~ /降低/
+describe ZHCN_BLACK_SUBJECT_JIANGDI Subject contains "降低"
+score ZHCN_BLACK_SUBJECT_JIANGDI    0.5
+
+header ZHCN_BLACK_SUBJECT_QUNFA Subject =~ /群发/
+describe ZHCN_BLACK_SUBJECT_QUNFA   Subject contains "群发"
+score ZHCN_BLACK_SUBJECT_QUNFA  1.0
+
+header ZHCN_BLACK_SUBJECT_HAILIANG  Subject =~ /海量/
+describe ZHCN_BLACK_SUBJECT_HAILIANG    Subject contains "海量"
+score ZHCN_BLACK_SUBJECT_HAILIANG   1.0
+
+header ZHCN_BLACK_SUBJECT_HEBAN Subject =~ /合办/
+describe ZHCN_BLACK_SUBJECT_HEBAN   Subject contains "合办"
+score ZHCN_BLACK_SUBJECT_HEBAN  0.2
+
+header ZHCN_BLACK_SUBJECT_YINSHUA   Subject =~ /印刷/
+describe ZHCN_BLACK_SUBJECT_YINSHUA Subject contains "印刷"
+score ZHCN_BLACK_SUBJECT_YINSHUA    1.0
+
+header ZHCN_BLACK_SUBJECT_JIATING   Subject =~ /家庭/
+describe ZHCN_BLACK_SUBJECT_JIATING Subject contains "家庭"
+score ZHCN_BLACK_SUBJECT_JIATING    0.2
+
+header ZHCN_BLACK_SUBJECT_DAIKAI    Subject =~ /代开/
+describe ZHCN_BLACK_SUBJECT_DAIKAI  Subject contains "代开"
+score ZHCN_BLACK_SUBJECT_DAIKAI 0.8
+
+header ZHCN_BLACK_SUBJECT_GUIGONGSI Subject =~ /贵公司/
+describe ZHCN_BLACK_SUBJECT_GUIGONGSI   Subject contains "贵公司"
+score ZHCN_BLACK_SUBJECT_GUIGONGSI  1.2
+
+header ZHCN_BLACK_SUBJECT_CHAOLIU   Subject =~ /潮流/
+describe ZHCN_BLACK_SUBJECT_CHAOLIU Subject contains "潮流"
+score ZHCN_BLACK_SUBJECT_CHAOLIU    0.5
+
+header ZHCN_BLACK_SUBJECT_ZUIXIN    Subject =~ /最新/
+describe ZHCN_BLACK_SUBJECT_ZUIXIN  Subject contains "最新"
+score ZHCN_BLACK_SUBJECT_ZUIXIN 1.1
+
+header ZHCN_BLACK_SUBJECT_JIPIAO    Subject =~ /机票/
+describe ZHCN_BLACK_SUBJECT_JIPIAO  Subject contains "机票"
+score ZHCN_BLACK_SUBJECT_JIPIAO 1.0
+
+header ZHCN_BLACK_SUBJECT_SHISHANG  Subject =~ /时尚/
+describe ZHCN_BLACK_SUBJECT_SHISHANG    Subject contains "时尚"
+score ZHCN_BLACK_SUBJECT_SHISHANG   1.0
+
+header ZHCN_BLACK_SUBJECT_ZHUANQIAN Subject =~ /赚钱/
+describe ZHCN_BLACK_SUBJECT_ZHUANQIAN   Subject contains "赚钱"
+score ZHCN_BLACK_SUBJECT_ZHUANQIAN  1.0
+
+header ZHCN_BLACK_SUBJECT_YUNSHU    Subject =~ /运输/
+describe ZHCN_BLACK_SUBJECT_YUNSHU  Subject contains "运输"
+score ZHCN_BLACK_SUBJECT_YUNSHU 0.1
+
+header ZHCN_BLACK_SUBJECT_ZHUJI Subject =~ /主机/
+describe ZHCN_BLACK_SUBJECT_ZHUJI   Subject contains "主机"
+score ZHCN_BLACK_SUBJECT_ZHUJI  0.200
+
+header ZHCN_BLACK_SUBJECT_YUNYONG   Subject =~ /运用/
+describe ZHCN_BLACK_SUBJECT_YUNYONG Subject contains "运用"
+score ZHCN_BLACK_SUBJECT_YUNYONG    1.0
+
+header ZHCN_BLACK_SUBJECT_TEHUI     Subject =~ /特惠/
+describe ZHCN_BLACK_SUBJECT_TEHUI   Subject contains "特惠"
+score ZHCN_BLACK_SUBJECT_TEHUI  1.0
+
+header ZHCN_BLACK_SUBJECT_YANZHENG      Subject =~ /验证/
+describe ZHCN_BLACK_SUBJECT_YANZHENG    Subject contains "验证"
+score ZHCN_BLACK_SUBJECT_YANZHENG   0.1
+
+header ZHCN_BLACK_SUBJECT_YANZHENGHOU   Subject =~ /验证后/
+describe ZHCN_BLACK_SUBJECT_YANZHENGHOU Subject contains "验证后"
+score ZHCN_BLACK_SUBJECT_YANZHENGHOU    0.5
+
+header ZHCN_BLACK_SUBJECT_YICHENG   Subject =~ /已成/
+describe ZHCN_BLACK_SUBJECT_YICHENG Subject contains "已成"
+score ZHCN_BLACK_SUBJECT_YICHENG    0.6
+
+header ZHCN_BLACK_SUBJECT_ZHIXU Subject =~ /只需/
+describe ZHCN_BLACK_SUBJECT_ZHIXU   Subject contains "只需"
+score ZHCN_BLACK_SUBJECT_ZHIXU  0.5
+
+header ZHCN_BLACK_SUBJECT_WAISHANG  Subject =~ /外商/
+describe ZHCN_BLACK_SUBJECT_WAISHANG    Subject contains "外商"
+score ZHCN_BLACK_SUBJECT_WAISHANG   0.9
+
+header ZHCN_BLACK_SUBJECT_GAOQING   Subject =~ /高清/
+describe ZHCN_BLACK_SUBJECT_GAOQING Subject contains "高清"
+score ZHCN_BLACK_SUBJECT_GAOQING    0.3
+
+header ZHCN_BLACK_SUBJECT_YOUQINGLIANJIE    Subject =~ /友情链接/
+describe ZHCN_BLACK_SUBJECT_YOUQINGLIANJIE  Subject contains "友情链接"
+score ZHCN_BLACK_SUBJECT_YOUQINGLIANJIE 1.0
+
+header ZHCN_BLACK_SUBJECT_FENXIANG  Subject =~ /分享/
+describe ZHCN_BLACK_SUBJECT_FENXIANG    Subject contains "分享"
+score ZHCN_BLACK_SUBJECT_FENXIANG 0.9
+
+header ZHCN_BLACK_SUBJECT_GUANLI    Subject =~ /管理/
+describe ZHCN_BLACK_SUBJECT_GUANLI  Subject contains "管理"
+score ZHCN_BLACK_SUBJECT_GUANLI 0.3
+
+header ZHCN_BLACK_SUBJECT_ZILIAO    Subject =~ /资料/
+describe ZHCN_BLACK_SUBJECT_ZILIAO  Subject contains "资料"
+score ZHCN_BLACK_SUBJECT_ZILIAO 0.3
+
+header ZHCN_BLACK_SUBJECT_QIETING   Subject =~ /窃听/
+describe ZHCN_BLACK_SUBJECT_QIETING Subject contains "窃听"
+score ZHCN_BLACK_SUBJECT_QIETING    0.9
+
+header ZHCN_BLACK_SUBJECT_BAOJIA   Subject =~ /报价/
+describe ZHCN_BLACK_SUBJECT_BAOJIA Subject contains "报价"
+score ZHCN_BLACK_SUBJECT_BAOJIA    0.8
+
+header ZHCN_BLACK_SUBJECT_HANGKONG   Subject =~ /航空/
+describe ZHCN_BLACK_SUBJECT_HANGKONG Subject contains "航空"
+score ZHCN_BLACK_SUBJECT_HANGKONG    0.6
+
+header ZHCN_BLACK_SUBJECT_LVYOU   Subject =~ /旅游/
+describe ZHCN_BLACK_SUBJECT_LVYOU Subject contains "旅游"
+score ZHCN_BLACK_SUBJECT_LVYOU    0.2
+
+header ZHCN_BLACK_SUBJECT_YUAN   Subject =~ /\d元/
+describe ZHCN_BLACK_SUBJECT_YUAN Subject contains "5600元"
+score ZHCN_BLACK_SUBJECT_YUAN    0.8
+
+header ZHCN_BLACK_SUBJECT_SHANGGUAN   Subject =~ /商管/
+describe ZHCN_BLACK_SUBJECT_SHANGGUAN Subject contains "商管"
+score ZHCN_BLACK_SUBJECT_SHANGGUAN    0.4
+
+header ZHCN_BLACK_SUBJECT_YINGXIAO   Subject =~ /营销/
+describe ZHCN_BLACK_SUBJECT_YINGXIAO Subject contains "营销"
+score ZHCN_BLACK_SUBJECT_YINGXIAO    0.6
+
+header ZHCN_BLACK_SUBJECT_ZUIXIN   Subject =~ /最新/
+describe ZHCN_BLACK_SUBJECT_ZUIXIN Subject contains "最新"
+score ZHCN_BLACK_SUBJECT_ZUIXIN    0.1
+
+header ZHCN_BLACK_SUBJECT_KEHU   Subject =~ /客户/
+describe ZHCN_BLACK_SUBJECT_KEHU Subject contains "客户"
+score ZHCN_BLACK_SUBJECT_KEHU    0.3
+
+header ZHCN_BLACK_SUBJECT_HANGYE   Subject =~ /行业/
+describe ZHCN_BLACK_SUBJECT_HANGYE Subject contains "行业"
+score ZHCN_BLACK_SUBJECT_HANGYE    0.2
+
+header ZHCN_BLACK_SUBJECT_ZHUSU   Subject =~ /注塑/
+describe ZHCN_BLACK_SUBJECT_ZHUSU Subject contains "注塑"
+score ZHCN_BLACK_SUBJECT_ZHUSU    0.7
+
+header ZHCN_BLACK_SUBJECT_XIANZHI   Subject =~ /闲置/
+describe ZHCN_BLACK_SUBJECT_XIANZHI Subject contains "闲置"
+score ZHCN_BLACK_SUBJECT_XIANZHI    0.8
+
+header ZHCN_BLACK_SUBJECT_AD   Subject =~ /AD：/
+describe ZHCN_BLACK_SUBJECT_AD Subject contains "AD："
+score ZHCN_BLACK_SUBJECT_AD    1.0
+
+header ZHCN_BLACK_SUBJECT_PIAOYANZHENG   Subject =~ /票验证/
+describe ZHCN_BLACK_SUBJECT_PIAOYANZHENG Subject contains "票验证"
+score ZHCN_BLACK_SUBJECT_PIAOYANZHENG    0.3
+
+header ZHCN_BLACK_SUBJECT_ZHIYE   Subject =~ /职业/
+describe ZHCN_BLACK_SUBJECT_ZHIYE Subject contains "职业"
+score ZHCN_BLACK_SUBJECT_ZHIYE    0.3
+
+header ZHCN_BLACK_SUBJECT_QUANTAO   Subject =~ /全套/
+describe ZHCN_BLACK_SUBJECT_QUANTAO Subject contains "全套"
+score ZHCN_BLACK_SUBJECT_QUANTAO    0.7
+
+header ZHCN_BLACK_SUBJECT_FEIYONG   Subject =~ /费用/
+describe ZHCN_BLACK_SUBJECT_FEIYONG Subject contains "费用"
+score ZHCN_BLACK_SUBJECT_FEIYONG    0.3
+
+header ZHCN_BLACK_SUBJECT_TONGCHOU   Subject =~ /统筹/
+describe ZHCN_BLACK_SUBJECT_TONGCHOU Subject contains "统筹"
+score ZHCN_BLACK_SUBJECT_TONGCHOU    0.8
+
+header ZHCN_BLACK_SUBJECT_QUSHI   Subject =~ /趋势/
+describe ZHCN_BLACK_SUBJECT_QUSHI Subject contains "趋势"
+score ZHCN_BLACK_SUBJECT_QUSHI    0.8
+
+header ZHCN_BLACK_SUBJECT_XINGZHENGGONGZUO   Subject =~ /行政工作/
+describe ZHCN_BLACK_SUBJECT_XINGZHENGGONGZUO Subject contains "行政工作"
+score ZHCN_BLACK_SUBJECT_XINGZHENGGONGZUO    0.8
+
+header ZHCN_BLACK_SUBJECT_ZHUNZE   Subject =~ /准则/
+describe ZHCN_BLACK_SUBJECT_ZHUNZE Subject contains "准则"
+score ZHCN_BLACK_SUBJECT_ZHUNZE    0.6
+
+header ZHCN_BLACK_SUBJECT_GAOXIAO   Subject =~ /高效/
+describe ZHCN_BLACK_SUBJECT_GAOXIAO Subject contains "高效"
+score ZHCN_BLACK_SUBJECT_GAOXIAO    0.780
+
+header ZHCN_BLACK_SUBJECT_GAOCHAO   Subject =~ /高潮/
+describe ZHCN_BLACK_SUBJECT_GAOCHAO Subject contains "高潮"
+score ZHCN_BLACK_SUBJECT_GAOCHAO    0.082
+
+header ZHCN_BLACK_SUBJECT_LINGHUO   Subject =~ /灵活/
+describe ZHCN_BLACK_SUBJECT_LINGHUO Subject contains "灵活"
+score ZHCN_BLACK_SUBJECT_LINGHUO    0.5
+
+header ZHCN_BLACK_SUBJECT_ZHENGJI   Subject =~ /征集/
+describe ZHCN_BLACK_SUBJECT_ZHENGJI Subject contains "征集"
+score ZHCN_BLACK_SUBJECT_ZHENGJI    0.7
+
+header ZHCN_BLACK_SUBJECT_ZHONGCENG   Subject =~ /中层/
+describe ZHCN_BLACK_SUBJECT_ZHONGCENG Subject contains "中层"
+score ZHCN_BLACK_SUBJECT_ZHONGCENG    0.7
+
+header ZHCN_BLACK_SUBJECT_DINGYUE   Subject =~ /订阅/
+describe ZHCN_BLACK_SUBJECT_DINGYUE Subject contains "订阅"
+score ZHCN_BLACK_SUBJECT_DINGYUE    0.4
+
+header ZHCN_BLACK_SUBJECT_SHANGJI   Subject =~ /商机/
+describe ZHCN_BLACK_SUBJECT_SHANGJI Subject contains "商机"
+score ZHCN_BLACK_SUBJECT_SHANGJI    0.6
+
+header ZHCN_BLACK_SUBJECT_ZENYANG   Subject =~ /怎样/
+describe ZHCN_BLACK_SUBJECT_ZENYANG Subject contains "怎样"
+score ZHCN_BLACK_SUBJECT_ZENYANG    0.5
+
+header ZHCN_BLACK_SUBJECT_HUODE   Subject =~ /获得/
+describe ZHCN_BLACK_SUBJECT_HUODE Subject contains "获得"
+score ZHCN_BLACK_SUBJECT_HUODE    0.5
+
+header ZHCN_BLACK_SUBJECT_GENG   Subject =~ /更/
+describe ZHCN_BLACK_SUBJECT_GENG Subject contains "更"
+score ZHCN_BLACK_SUBJECT_GENG    0.1
+
+header ZHCN_BLACK_SUBJECT_QIANGLIE   Subject =~ /强烈/
+describe ZHCN_BLACK_SUBJECT_QIANGLIE Subject contains "强烈"
+score ZHCN_BLACK_SUBJECT_QIANGLIE    0.7
+
+header ZHCN_BLACK_SUBJECT_JIXIAO   Subject =~ /绩效/
+describe ZHCN_BLACK_SUBJECT_JIXIAO Subject contains "绩效"
+score ZHCN_BLACK_SUBJECT_JIXIAO    0.7
+
+header ZHCN_BLACK_SUBJECT_XUNLIAN   Subject =~ /训练/
+describe ZHCN_BLACK_SUBJECT_XUNLIAN Subject contains "训练"
+score ZHCN_BLACK_SUBJECT_XUNLIAN    0.7
+
+header ZHCN_BLACK_SUBJECT_GAOJI   Subject =~ /高级/
+describe ZHCN_BLACK_SUBJECT_GAOJI Subject contains "高级"
+score ZHCN_BLACK_SUBJECT_GAOJI    0.1
+
+header ZHCN_BLACK_SUBJECT_XINGAI   Subject =~ /性爱/
+describe ZHCN_BLACK_SUBJECT_XINGAI Subject contains "性爱"
+score ZHCN_BLACK_SUBJECT_XINGAI    0.9
+
+header ZHCN_BLACK_SUBJECT_CHIJIU   Subject =~ /持久/
+describe ZHCN_BLACK_SUBJECT_CHIJIU Subject contains "持久"
+score ZHCN_BLACK_SUBJECT_CHIJIU    0.7
+
+header ZHCN_BLACK_SUBJECT_JIENENG   Subject =~ /节能/
+describe ZHCN_BLACK_SUBJECT_JIENENG Subject contains "节能"
+score ZHCN_BLACK_SUBJECT_JIENENG    0.5
+
+header ZHCN_BLACK_SUBJECT_ZHENGJI   Subject =~ /征集/
+describe ZHCN_BLACK_SUBJECT_ZHENGJI Subject contains "征集"
+score ZHCN_BLACK_SUBJECT_ZHENGJI    0.6
+
+header ZHCN_BLACK_SUBJECT_QIKAN   Subject =~ /期刊/
+describe ZHCN_BLACK_SUBJECT_QIKAN Subject contains "期刊"
+score ZHCN_BLACK_SUBJECT_QIKAN    0.4
+
+header ZHCN_BLACK_SUBJECT_BANGSHOU   Subject =~ /帮手/
+describe ZHCN_BLACK_SUBJECT_BANGSHOU Subject contains "帮手"
+score ZHCN_BLACK_SUBJECT_BANGSHOU    0.6
+
+header ZHCN_BLACK_SUBJECT_YUYIN   Subject =~ /语音/
+describe ZHCN_BLACK_SUBJECT_YUYIN Subject contains "语音"
+score ZHCN_BLACK_SUBJECT_YUYIN    0.1
+
+header ZHCN_BLACK_SUBJECT_DUANXIN   Subject =~ /短信/
+describe ZHCN_BLACK_SUBJECT_DUANXIN Subject contains "短信"
+score ZHCN_BLACK_SUBJECT_DUANXIN    0.1
+
+header ZHCN_BLACK_SUBJECT_WEIXIN   Subject =~ /微信/
+describe ZHCN_BLACK_SUBJECT_WEIXIN Subject contains "微信"
+score ZHCN_BLACK_SUBJECT_WEIXIN    0.1
+
+header ZHCN_BLACK_SUBJECT_BIKAN   Subject =~ /必看/
+describe ZHCN_BLACK_SUBJECT_BIKAN Subject contains "必看"
+score ZHCN_BLACK_SUBJECT_BIKAN    0.8
+
+header ZHCN_BLACK_SUBJECT_GONGQIU   Subject =~ /供求/
+describe ZHCN_BLACK_SUBJECT_GONGQIU Subject contains "供求"
+score ZHCN_BLACK_SUBJECT_GONGQIU    0.6
+
+header ZHCN_BLACK_SUBJECT_HUAGONG   Subject =~ /化工/
+describe ZHCN_BLACK_SUBJECT_HUAGONG Subject contains "化工"
+score ZHCN_BLACK_SUBJECT_HUAGONG    0.7
+
+header ZHCN_BLACK_SUBJECT_JUECE   Subject =~ /决策/
+describe ZHCN_BLACK_SUBJECT_JUECE Subject contains "决策"
+score ZHCN_BLACK_SUBJECT_JUECE    0.5
+
+header ZHCN_BLACK_SUBJECT_JIANZHU   Subject =~ /建筑/
+describe ZHCN_BLACK_SUBJECT_JIANZHU Subject contains "建筑"
+score ZHCN_BLACK_SUBJECT_JIANZHU    0.4
+
+header ZHCN_BLACK_SUBJECT_JIANZHAN  Subject =~ /建站/
+describe ZHCN_BLACK_SUBJECT_JIANZHAN Subject contains "建站"
+score ZHCN_BLACK_SUBJECT_JIANZHAN    0.5
+
+header ZHCN_BLACK_SUBJECT_WUZI   Subject =~ /物资/
+describe ZHCN_BLACK_SUBJECT_WUZI Subject contains "物资"
+score ZHCN_BLACK_SUBJECT_WUZI    0.1
+
+header ZHCN_BLACK_SUBJECT_CAISHUI   Subject =~ /财税/
+describe ZHCN_BLACK_SUBJECT_CAISHUI Subject contains "财税"
+score ZHCN_BLACK_SUBJECT_CAISHUI    0.8
+
+header ZHCN_BLACK_SUBJECT_BANGNI   Subject =~ /帮你/
+describe ZHCN_BLACK_SUBJECT_BANGNI Subject contains "帮你"
+score ZHCN_BLACK_SUBJECT_BANGNI    0.5
+
+header ZHCN_BLACK_SUBJECT_ZIXUN   Subject =~ /咨询/
+describe ZHCN_BLACK_SUBJECT_ZIXUN Subject contains "咨询"
+score ZHCN_BLACK_SUBJECT_ZIXUN    0.2
+
+header ZHCN_BLACK_SUBJECT_YINGXIAO   Subject =~ /营销/
+describe ZHCN_BLACK_SUBJECT_YINGXIAO Subject contains "营销"
+score ZHCN_BLACK_SUBJECT_YINGXIAO    0.3
+
+header ZHCN_BLACK_SUBJECT_PIFA   Subject =~ /批发/
+describe ZHCN_BLACK_SUBJECT_PIFA Subject contains "批发"
+score ZHCN_BLACK_SUBJECT_PIFA    0.6
+
+header ZHCN_BLACK_SUBJECT_GONGCHENG   Subject =~ /工程/
+describe ZHCN_BLACK_SUBJECT_GONGCHENG Subject contains "工程"
+score ZHCN_BLACK_SUBJECT_GONGCHENG    0.2
+
+header ZHCN_BLACK_SUBJECT_XIANGMU   Subject =~ /项目/
+describe ZHCN_BLACK_SUBJECT_XIANGMU Subject contains "项目"
+score ZHCN_BLACK_SUBJECT_XIANGMU    0.2
+
+header ZHCN_BLACK_SUBJECT_XIEHUI   Subject =~ /协会/
+describe ZHCN_BLACK_SUBJECT_XIEHUI Subject contains "协会"
+score ZHCN_BLACK_SUBJECT_XIEHUI    0.4
+
+header ZHCN_BLACK_SUBJECT_MINGLU   Subject =~ /名录/
+describe ZHCN_BLACK_SUBJECT_MINGLU Subject contains "名录"
+score ZHCN_BLACK_SUBJECT_MINGLU    0.3
+
+header ZHCN_BLACK_SUBJECT_CHUANGXIN   Subject =~ /创新/
+describe ZHCN_BLACK_SUBJECT_CHUANGXIN Subject contains "创新"
+score ZHCN_BLACK_SUBJECT_CHUANGXIN    0.3
+
+header ZHCN_BLACK_SUBJECT_ZUNJINGDE   Subject =~ /尊敬的/
+describe ZHCN_BLACK_SUBJECT_ZUNJINGDE Subject contains "尊敬的"
+score ZHCN_BLACK_SUBJECT_ZUNJINGDE    0.3
+
+header ZHCN_BLACK_SUBJECT_DAILI   Subject =~ /代理/
+describe ZHCN_BLACK_SUBJECT_DAILI Subject contains "\,代理"
+score ZHCN_BLACK_SUBJECT_DAILI    0.540
+
+header ZHCN_BLACK_SUBJECT_SHIWU   Subject =~ /实务/
+describe ZHCN_BLACK_SUBJECT_SHIWU Subject contains "实务"
+score ZHCN_BLACK_SUBJECT_SHIWU    0.9
+
+header ZHCN_BLACK_SUBJECT_MEIBAI   Subject =~ /美白/
+describe ZHCN_BLACK_SUBJECT_MEIBAI Subject contains "美白"
+score ZHCN_BLACK_SUBJECT_MEIBAI    0.4
+
+header ZHCN_BLACK_SUBJECT_HUANBAO   Subject =~ /环保/
+describe ZHCN_BLACK_SUBJECT_HUANBAO Subject contains "环保"
+score ZHCN_BLACK_SUBJECT_HUANBAO    0.2
+
+header ZHCN_BLACK_SUBJECT_DUISHOU   Subject =~ /对手/
+describe ZHCN_BLACK_SUBJECT_DUISHOU Subject contains "对手"
+score ZHCN_BLACK_SUBJECT_DUISHOU    0.7
+
+header ZHCN_BLACK_SUBJECT_GONGYIPIN   Subject =~ /工艺品/
+describe ZHCN_BLACK_SUBJECT_GONGYIPIN Subject contains "工艺品"
+score ZHCN_BLACK_SUBJECT_GONGYIPIN    0.4
+
+header ZHCN_BLACK_SUBJECT_QUANAN   Subject =~ /全案/
+describe ZHCN_BLACK_SUBJECT_QUANAN Subject contains "全案"
+score ZHCN_BLACK_SUBJECT_QUANAN    0.444
+
+header ZHCN_BLACK_SUBJECT_CEHUA   Subject =~ /策划/
+describe ZHCN_BLACK_SUBJECT_CEHUA Subject contains "策划"
+score ZHCN_BLACK_SUBJECT_CEHUA    0.4
+
+header ZHCN_BLACK_SUBJECT_YINJING   Subject =~ /阴茎/
+describe ZHCN_BLACK_SUBJECT_YINJING Subject contains "阴茎"
+score ZHCN_BLACK_SUBJECT_YINJING    0.8
+
+header ZHCN_BLACK_SUBJECT_SHICHANG   Subject =~ /市场/
+describe ZHCN_BLACK_SUBJECT_SHICHANG Subject contains "市场"
+score ZHCN_BLACK_SUBJECT_SHICHANG    0.2
+
+header ZHCN_BLACK_SUBJECT_DAPI   Subject =~ /大批/
+describe ZHCN_BLACK_SUBJECT_DAPI Subject contains "大批"
+score ZHCN_BLACK_SUBJECT_DAPI    0.4
+
+header ZHCN_BLACK_SUBJECT_ZHONGBANG   Subject =~ /重磅/
+describe ZHCN_BLACK_SUBJECT_ZHONGBANG Subject contains "重磅"
+score ZHCN_BLACK_SUBJECT_ZHONGBANG    0.5
+
+header ZHCN_BLACK_SUBJECT_YANTAO   Subject =~ /研讨/
+describe ZHCN_BLACK_SUBJECT_YANTAO Subject contains "研讨"
+score ZHCN_BLACK_SUBJECT_YANTAO    0.5
+
+header ZHCN_BLACK_SUBJECT_HAOXIAOXI   Subject =~ /好消息/
+describe ZHCN_BLACK_SUBJECT_HAOXIAOXI Subject contains "好消息"
+score ZHCN_BLACK_SUBJECT_HAOXIAOXI    0.4
+
+header ZHCN_BLACK_SUBJECT_KAITUO   Subject =~ /开拓/
+describe ZHCN_BLACK_SUBJECT_KAITUO Subject contains "开拓"
+score ZHCN_BLACK_SUBJECT_KAITUO    0.3
+
+header ZHCN_BLACK_SUBJECT_LAODONG   Subject =~ /劳动/
+describe ZHCN_BLACK_SUBJECT_LAODONG Subject contains "劳动"
+score ZHCN_BLACK_SUBJECT_LAODONG    0.3
+
+header ZHCN_BLACK_SUBJECT_ZHENGYI   Subject =~ /争议/
+describe ZHCN_BLACK_SUBJECT_ZHENGYI Subject contains "争议"
+score ZHCN_BLACK_SUBJECT_ZHENGYI    0.3
+
+header ZHCN_BLACK_SUBJECT_JIEJUE   Subject =~ /解决/
+describe ZHCN_BLACK_SUBJECT_JIEJUE Subject contains "解决"
+score ZHCN_BLACK_SUBJECT_JIEJUE    0.2
+
+header ZHCN_BLACK_SUBJECT_FANGAN   Subject =~ /方案/
+describe ZHCN_BLACK_SUBJECT_FANGAN Subject contains "方案"
+score ZHCN_BLACK_SUBJECT_FANGAN    0.2
+
+header ZHCN_BLACK_SUBJECT_CHENGRENYONGPIN   Subject =~ /成人用品/
+describe ZHCN_BLACK_SUBJECT_CHENGRENYONGPIN Subject contains "成人用品"
+score ZHCN_BLACK_SUBJECT_CHENGRENYONGPIN    0.6
+
+header ZHCN_BLACK_SUBJECT_NANNV   Subject =~ /男女/
+describe ZHCN_BLACK_SUBJECT_NANNV Subject contains "男女"
+score ZHCN_BLACK_SUBJECT_NANNV    0.2
+
+header ZHCN_BLACK_SUBJECT_QINGQU   Subject =~ /情趣/
+describe ZHCN_BLACK_SUBJECT_QINGQU Subject contains "情趣"
+score ZHCN_BLACK_SUBJECT_QINGQU    0.2
+
+header ZHCN_BLACK_SUBJECT_CUIQING   Subject =~ /催情/
+describe ZHCN_BLACK_SUBJECT_CUIQING Subject contains "催情"
+score ZHCN_BLACK_SUBJECT_CUIQING    0.5
+
+header ZHCN_BLACK_SUBJECT_KAIKE   Subject =~ /开课/
+describe ZHCN_BLACK_SUBJECT_KAIKE Subject contains "开课"
+score ZHCN_BLACK_SUBJECT_KAIKE    0.5
+
+header ZHCN_BLACK_SUBJECT_GAOJING   Subject =~ /高精/
+describe ZHCN_BLACK_SUBJECT_GAOJING Subject contains "高精"
+score ZHCN_BLACK_SUBJECT_GAOJING    0.5
+
+header ZHCN_BLACK_SUBJECT_TONGCHENG   Subject =~ /同城/
+describe ZHCN_BLACK_SUBJECT_TONGCHENG Subject contains "同城"
+score ZHCN_BLACK_SUBJECT_TONGCHENG    0.3
+
+header ZHCN_BLACK_SUBJECT_TIGONG   Subject =~ /提供/
+describe ZHCN_BLACK_SUBJECT_TIGONG Subject contains "提供"
+score ZHCN_BLACK_SUBJECT_TIGONG    0.1
+
+header ZHCN_BLACK_SUBJECT_BAOWEN   Subject =~ /保温/
+describe ZHCN_BLACK_SUBJECT_BAOWEN Subject contains "保温"
+score ZHCN_BLACK_SUBJECT_BAOWEN    0.3
+
+header ZHCN_BLACK_SUBJECT_BIAOQING   Subject =~ /表情/
+describe ZHCN_BLACK_SUBJECT_BIAOQING Subject contains "表情"
+score ZHCN_BLACK_SUBJECT_BIAOQING    0.2
+
+header ZHCN_BLACK_SUBJECT_GONGYU   Subject =~ /公寓/
+describe ZHCN_BLACK_SUBJECT_GONGYU Subject contains "公寓"
+score ZHCN_BLACK_SUBJECT_GONGYU    0.2
+
+header ZHCN_BLACK_SUBJECT_LIQI   Subject =~ /利器/
+describe ZHCN_BLACK_SUBJECT_LIQI Subject contains "利器"
+score ZHCN_BLACK_SUBJECT_LIQI    0.4
+
+header ZHCN_BLACK_SUBJECT_LUNWEN   Subject =~ /论文/
+describe ZHCN_BLACK_SUBJECT_LUNWEN Subject contains "论文"
+score ZHCN_BLACK_SUBJECT_LUNWEN    0.1
+
+header ZHCN_BLACK_SUBJECT_ZHENGGAO   Subject =~ /征稿/
+describe ZHCN_BLACK_SUBJECT_ZHENGGAO Subject contains "征稿"
+score ZHCN_BLACK_SUBJECT_ZHENGGAO    0.3
+
+header ZHCN_BLACK_SUBJECT_QIKAN   Subject =~ /期刊/
+describe ZHCN_BLACK_SUBJECT_QIKAN Subject contains "期刊"
+score ZHCN_BLACK_SUBJECT_QIKAN    0.2
+
+header ZHCN_BLACK_SUBJECT_SUOQU   Subject =~ /索取/
+describe ZHCN_BLACK_SUBJECT_SUOQU Subject contains "索取"
+score ZHCN_BLACK_SUBJECT_SUOQU    0.3
+
+header ZHCN_BLACK_SUBJECT_GONGWEN   Subject =~ /公文/
+describe ZHCN_BLACK_SUBJECT_GONGWEN Subject contains "公文"
+score ZHCN_BLACK_SUBJECT_GONGWEN    0.3
+
+header ZHCN_BLACK_SUBJECT_FENGXIONG   Subject =~ /丰胸/
+describe ZHCN_BLACK_SUBJECT_FENGXIONG Subject contains "丰胸"
+score ZHCN_BLACK_SUBJECT_FENGXIONG    0.4
+
+header ZHCN_BLACK_SUBJECT_QUDOU   Subject =~ /祛痘/
+describe ZHCN_BLACK_SUBJECT_QUDOU Subject contains "祛痘"
+score ZHCN_BLACK_SUBJECT_QUDOU    0.4
+
+header ZHCN_BLACK_SUBJECT_JIANRONG   Subject =~ /兼容/
+describe ZHCN_BLACK_SUBJECT_JIANRONG Subject contains "兼容"
+score ZHCN_BLACK_SUBJECT_JIANRONG    0.4
+
+header ZHCN_BLACK_SUBJECT_CHANGLONG   Subject =~ /昌隆/
+describe ZHCN_BLACK_SUBJECT_CHANGLONG Subject contains "昌隆"
+score ZHCN_BLACK_SUBJECT_CHANGLONG    0.1
+
+header ZHCN_BLACK_SUBJECT_KAIDIAN   Subject =~ /开店/
+describe ZHCN_BLACK_SUBJECT_KAIDIAN Subject contains "开店"
+score ZHCN_BLACK_SUBJECT_KAIDIAN    0.3
+
+header ZHCN_BLACK_SUBJECT_XIANWEI   Subject =~ /纤维/
+describe ZHCN_BLACK_SUBJECT_XIANWEI Subject contains "纤维"
+score ZHCN_BLACK_SUBJECT_XIANWEI    0.4
+
+header ZHCN_BLACK_SUBJECT_LICAI   Subject =~ /理财/
+describe ZHCN_BLACK_SUBJECT_LICAI Subject contains "理财"
+score ZHCN_BLACK_SUBJECT_LICAI    0.4
+
+header ZHCN_BLACK_SUBJECT_BIAOZHUN   Subject =~ /标准/
+describe ZHCN_BLACK_SUBJECT_BIAOZHUN Subject contains "标准"
+score ZHCN_BLACK_SUBJECT_BIAOZHUN    0.1
+
+header ZHCN_BLACK_SUBJECT_GONGCHANG   Subject =~ /工厂/
+describe ZHCN_BLACK_SUBJECT_GONGCHANG Subject contains "工厂"
+score ZHCN_BLACK_SUBJECT_GONGCHANG    0.3
+
+header ZHCN_BLACK_SUBJECT_CHEJIAN   Subject =~ /车间/
+describe ZHCN_BLACK_SUBJECT_CHEJIAN Subject contains "车间"
+score ZHCN_BLACK_SUBJECT_CHEJIAN    0.3
+
+header ZHCN_BLACK_SUBJECT_SHEBEI   Subject =~ /设备/
+describe ZHCN_BLACK_SUBJECT_SHEBEI Subject contains "设备"
+score ZHCN_BLACK_SUBJECT_SHEBEI    0.3
+
+header ZHCN_BLACK_SUBJECT_FUZEREN   Subject =~ /负责人/
+describe ZHCN_BLACK_SUBJECT_FUZEREN Subject contains "负责人"
+score ZHCN_BLACK_SUBJECT_FUZEREN    0.1
+
+header ZHCN_BLACK_SUBJECT_HEKA   Subject =~ /贺卡/
+describe ZHCN_BLACK_SUBJECT_HEKA Subject contains "贺卡"
+score ZHCN_BLACK_SUBJECT_HEKA    0.2
+
+header ZHCN_BLACK_SUBJECT_PINGTAI   Subject =~ /平台/
+describe ZHCN_BLACK_SUBJECT_PINGTAI Subject contains "平台"
+score ZHCN_BLACK_SUBJECT_PINGTAI    0.1
+
+header ZHCN_BLACK_SUBJECT_JIAOXUE   Subject =~ /教学/
+describe ZHCN_BLACK_SUBJECT_JIAOXUE Subject contains "教学"
+score ZHCN_BLACK_SUBJECT_JIAOXUE    0.2
+
+header ZHCN_BLACK_SUBJECT_GUISI   Subject =~ /贵司/
+describe ZHCN_BLACK_SUBJECT_GUISI Subject contains "贵司"
+score ZHCN_BLACK_SUBJECT_GUISI    0.4
+
+header ZHCN_BLACK_SUBJECT_SHENGCHAN   Subject =~ /生产/
+describe ZHCN_BLACK_SUBJECT_SHENGCHAN Subject contains "生产"
+score ZHCN_BLACK_SUBJECT_SHENGCHAN    0.300
+
+header ZHCN_BLACK_SUBJECT_JIHUA   Subject =~ /计划/
+describe ZHCN_BLACK_SUBJECT_JIHUA Subject contains "计划"
+score ZHCN_BLACK_SUBJECT_JIHUA    0.300
+
+header ZHCN_BLACK_SUBJECT_XUNLIANYING   Subject =~ /训练营/
+describe ZHCN_BLACK_SUBJECT_XUNLIANYING Subject contains "训练营"
+score ZHCN_BLACK_SUBJECT_XUNLIANYING    0.5
+
+header ZHCN_BLACK_SUBJECT_XINSHOU   Subject =~ /新手/
+describe ZHCN_BLACK_SUBJECT_XINSHOU Subject contains "新手"
+score ZHCN_BLACK_SUBJECT_XINSHOU    0.2
+
+header ZHCN_BLACK_SUBJECT_CHENGJIAO   Subject =~ /成交/
+describe ZHCN_BLACK_SUBJECT_CHENGJIAO Subject contains "成交"
+score ZHCN_BLACK_SUBJECT_CHENGJIAO    0.3
+
+header ZHCN_BLACK_SUBJECT_DAILI   Subject =~ /代理/
+describe ZHCN_BLACK_SUBJECT_DAILI Subject contains "代理"
+score ZHCN_BLACK_SUBJECT_DAILI    0.3
+
+header ZHCN_BLACK_SUBJECT_CITUI  Subject =~ /辞退/
+describe ZHCN_BLACK_SUBJECT_CITUI    Subject contains "辞退"
+score ZHCN_BLACK_SUBJECT_CITUI   0.8
+
+header ZHCN_BLACK_SUBJECT_YUANGONG  Subject =~ /员工/
+describe ZHCN_BLACK_SUBJECT_YUANGONG    Subject contains "员工"
+score ZHCN_BLACK_SUBJECT_YUANGONG   0.5
+
+header ZHCN_BLACK_SUBJECT_HUIZHI  Subject =~ /回执/
+describe ZHCN_BLACK_SUBJECT_HUIZHI    Subject contains "回执"
+score ZHCN_BLACK_SUBJECT_HUIZHI   0.3
+
+body ZHCN_BLACK_BODY_YOUXIANGONGSI  /有限公司/
+describe ZHCN_BLACK_BODY_YOUXIANGONGSI  Body contains "有限公司"
+score ZHCN_BLACK_BODY_YOUXIANGONGSI 0.01
+
+body ZHCN_BLACK_BODY_FAPIAO  /发票/
+describe ZHCN_BLACK_BODY_FAPIAO  Body contains "发票"
+score ZHCN_BLACK_BODY_FAPIAO 0.01
+
+body ZHCN_BLACK_BODY_GUANGGAO  /广告/
+describe ZHCN_BLACK_BODY_GUANGGAO  Body contains "广告"
+score ZHCN_BLACK_BODY_GUANGGAO 0.01
+
+body ZHCN_BLACK_BODY_XIAOSHOU  /销售/
+describe ZHCN_BLACK_BODY_XIAOSHOU  Body contains "销售"
+score ZHCN_BLACK_BODY_XIAOSHOU 0.30
+
+body ZHCN_BLACK_BODY_YUNSHU  /运输/
+describe ZHCN_BLACK_BODY_YUNSHU  Body contains "运输"
+score ZHCN_BLACK_BODY_YUNSHU 0.04
+
+body ZHCN_BLACK_BODY_YOUHUI  /优惠/
+describe ZHCN_BLACK_BODY_YOUHUI  Body contains "优惠"
+score ZHCN_BLACK_BODY_YOUHUI 0.01
+
+body ZHCN_BLACK_BODY_JIANZHU  /建筑/
+describe ZHCN_BLACK_BODY_JIANZHU  Body contains "建筑"
+score ZHCN_BLACK_BODY_JIANZHU 0.01
+
+body ZHCN_BLACK_BODY_SHANGPIN /商品/
+describe ZHCN_BLACK_BODY_SHANGPIN Body contains "商品"
+score ZHCN_BLACK_BODY_SHANGPIN    0.10
+
+body ZHCN_BLACK_BODY_DAIKAI /代开/
+describe ZHCN_BLACK_BODY_DAIKAI Body contains "代开"
+score ZHCN_BLACK_BODY_DAIKAI    1.50
+
+body ZHCN_BLACK_BODY_LIANXIREN /联系人/
+describe ZHCN_BLACK_BODY_LIANXIREN Body contains "联系人"
+score ZHCN_BLACK_BODY_LIANXIREN    0.30
+
+body ZHCN_BLACK_BODY_SHIYE /实业/
+describe ZHCN_BLACK_BODY_SHIYE Body contains "实业"
+score ZHCN_BLACK_BODY_SHIYE    0.04
+
+body ZHCN_BLACK_BODY_GUIGONGSI /贵公司/
+describe ZHCN_BLACK_BODY_GUIGONGSI Body contains "贵公司"
+score ZHCN_BLACK_BODY_GUIGONGSI    2.10
+
+body ZHCN_BLACK_BODY_DISHUI /地税/
+describe ZHCN_BLACK_BODY_DISHUI Body contains "地税"
+score ZHCN_BLACK_BODY_DISHUI    0.20
+
+body ZHCN_BLACK_BODY_GUOSHUI /国税/
+describe ZHCN_BLACK_BODY_GUOSHUI Body contains "地税"
+score ZHCN_BLACK_BODY_GUOSHUI    0.20
+
+body ZHCN_BLACK_BODY_JINXIANG /进项/
+describe ZHCN_BLACK_BODY_JINXIANG Body contains "进项"
+score ZHCN_BLACK_BODY_JINXIANG    0.07
+
+body ZHCN_BLACK_BODY_FUKUAN /付款/
+describe ZHCN_BLACK_BODY_FUKUAN Body contains "付款"
+score ZHCN_BLACK_BODY_FUKUAN    0.08
+
+body ZHCN_BLACK_BODY_ANZHUANG /安装/
+describe ZHCN_BLACK_BODY_ANZHUANG Body contains "安装"
+score ZHCN_BLACK_BODY_ANZHUANG    0.01
+
+body ZHCN_BLACK_BODY_YANZHENG /验证/
+describe ZHCN_BLACK_BODY_YANZHENG Body contains "验证"
+score ZHCN_BLACK_BODY_YANZHENG    0.01
+
+body ZHCN_BLACK_BODY_LAIDIAN /来电/
+describe ZHCN_BLACK_BODY_LAIDIAN Body contains "来电"
+score ZHCN_BLACK_BODY_LAIDIAN    0.03
+
+body ZHCN_BLACK_BODY_DIANSHU /点数/
+describe ZHCN_BLACK_BODY_DIANSHU Body contains "点数"
+score ZHCN_BLACK_BODY_DIANSHU    0.40
+
+body ZHCN_BLACK_BODY_DAXIAO /大小/
+describe ZHCN_BLACK_BODY_DAXIAO Body contains "大小"
+score ZHCN_BLACK_BODY_DAXIAO    0.02
+
+body ZHCN_BLACK_BODY_HAIGUAN /海关/
+describe ZHCN_BLACK_BODY_HAIGUAN Body contains "海关"
+score ZHCN_BLACK_BODY_HAIGUAN    0.20
+
+body ZHCN_BLACK_BODY_XIONGHOU /雄厚/
+describe ZHCN_BLACK_BODY_XIONGHOU Body contains "雄厚"
+score ZHCN_BLACK_BODY_XIONGHOU    0.05
+
+body ZHCN_BLACK_BODY_JINGLI /经理/
+describe ZHCN_BLACK_BODY_JINGLI Body contains "经理"
+score ZHCN_BLACK_BODY_JINGLI    0.10
+
+body ZHCN_BLACK_BODY_XIANGQING /详情/
+describe ZHCN_BLACK_BODY_XIANGQING Body contains "详情"
+score ZHCN_BLACK_BODY_XIANGQING    0.50
+
+body ZHCN_BLACK_BODY_JIAOKUAN /缴款/
+describe ZHCN_BLACK_BODY_JIAOKUAN Body contains "缴款"
+score ZHCN_BLACK_BODY_JIAOKUAN    0.5
+
+body ZHCN_BLACK_BODY_WOSI /我司/
+describe ZHCN_BLACK_BODY_WOSI Body contains "我司"
+score ZHCN_BLACK_BODY_WOSI    2.30
+
+body ZHCN_BLACK_BODY_ZULIN /租赁/
+describe ZHCN_BLACK_BODY_ZULIN Body contains "租赁"
+score ZHCN_BLACK_BODY_ZULIN    0.40
+
+body ZHCN_BLACK_BODY_CHAXUN /查询/
+describe ZHCN_BLACK_BODY_CHAXUN Body contains "查询"
+score ZHCN_BLACK_BODY_CHAXUN    0.01
+
+body ZHCN_BLACK_BODY_CHANGQIYOUXIAO /长期有效/
+describe ZHCN_BLACK_BODY_CHANGQIYOUXIAO Body contains "长期有效"
+score ZHCN_BLACK_BODY_CHANGQIYOUXIAO    0.25
+
+body ZHCN_BLACK_BODY_SHUIWU /税务/
+describe ZHCN_BLACK_BODY_SHUIWU Body contains "税务"
+score ZHCN_BLACK_BODY_SHUIWU    0.01
+
+body ZHCN_BLACK_BODY_GUISI /贵司/
+describe ZHCN_BLACK_BODY_GUISI Body contains "贵司"
+score ZHCN_BLACK_BODY_GUISI    1.700
+
+body ZHCN_BLACK_BODY_CHANGQI    /长期/
+describe ZHCN_BLACK_BODY_CHANGQI    Body contains "长期"
+score ZHCN_BLACK_BODY_CHANGQI   0.40
+
+body ZHCN_BLACK_BODY_ZHENWEI    /真伪/
+describe ZHCN_BLACK_BODY_ZHENWEI    Body contains "真伪"
+score ZHCN_BLACK_BODY_ZHENWEI   0.01
+
+body ZHCN_BLACK_BODY_EDU    /额度/
+describe ZHCN_BLACK_BODY_EDU    Body contains "额度"
+score ZHCN_BLACK_BODY_EDU   0.10
+
+body ZHCN_BLACK_BODY_DARAO    /打扰/
+describe ZHCN_BLACK_BODY_DARAO    Body contains "打扰"
+score ZHCN_BLACK_BODY_DARAO   0.10
+
+body ZHCN_BLACK_BODY_DIKOU    /抵扣/
+describe ZHCN_BLACK_BODY_DIKOU    Body contains "抵扣"
+score ZHCN_BLACK_BODY_DIKOU   1.10
+
+body ZHCN_BLACK_BODY_MEIYUE    /每月/
+describe ZHCN_BLACK_BODY_MEIYUE    Body contains "每月"
+score ZHCN_BLACK_BODY_MEIYUE   0.03
+
+body ZHCN_BLACK_BODY_JUEDUI    /绝对/
+describe ZHCN_BLACK_BODY_JUEDUI    Body contains "绝对"
+score ZHCN_BLACK_BODY_JUEDUI   0.20
+
+body ZHCN_BLACK_BODY_LIANXI    /联系/
+describe ZHCN_BLACK_BODY_LIANXI    Body contains "联系"
+score ZHCN_BLACK_BODY_LIANXI   0.01
+
+body ZHCN_BLACK_BODY_SHANGTAO    /商讨/
+describe ZHCN_BLACK_BODY_SHANGTAO    Body contains "商讨"
+score ZHCN_BLACK_BODY_SHANGTAO   0.18
+
+body ZHCN_BLACK_BODY_CANYIN    /餐饮/
+describe ZHCN_BLACK_BODY_CANYIN    Body contains "餐饮"
+score ZHCN_BLACK_BODY_CANYIN   0.34
+
+body ZHCN_BLACK_BODY_QINGDIAN    /请电/
+describe ZHCN_BLACK_BODY_QINGDIAN    Body contains "请电"
+score ZHCN_BLACK_BODY_QINGDIAN   0.30
+
+body ZHCN_BLACK_BODY_PIAOJU    /票据/
+describe ZHCN_BLACK_BODY_PIAOJU    Body contains "票据"
+score ZHCN_BLACK_BODY_PIAOJU   0.10
+
+body ZHCN_BLACK_BODY_HEZUO    /合作/
+describe ZHCN_BLACK_BODY_HEZUO    Body contains "合作"
+score ZHCN_BLACK_BODY_HEZUO   0.10
+
+body ZHCN_BLACK_BODY_FUWUYE    /服务业/
+describe ZHCN_BLACK_BODY_FUWUYE    Body contains "服务业"
+score ZHCN_BLACK_BODY_FUWUYE   0.30
+
+body ZHCN_BLACK_BODY_BENGONGSI    /本公司/
+describe ZHCN_BLACK_BODY_BENGONGSI    Body contains "本公司"
+score ZHCN_BLACK_BODY_BENGONGSI   0.35
+
+body ZHCN_BLACK_BODY_SHUILV    /税率/
+describe ZHCN_BLACK_BODY_SHUILV    Body contains "税率"
+score ZHCN_BLACK_BODY_SHUILV   0.30
+
+body ZHCN_BLACK_BODY_CHUANZHEN    /传真/
+describe ZHCN_BLACK_BODY_CHUANZHEN    Body contains "传真"
+score ZHCN_BLACK_BODY_CHUANZHEN   0.10
+
+body ZHCN_BLACK_BODY_SHUNZHU    /顺祝/
+describe ZHCN_BLACK_BODY_SHUNZHU    Body contains "顺祝"
+score ZHCN_BLACK_BODY_SHUNZHU   1.10
+
+body ZHCN_BLACK_BODY_ZUNJINGDE    /尊敬的/
+describe ZHCN_BLACK_BODY_ZUNJINGDE    Body contains "尊敬的"
+score ZHCN_BLACK_BODY_ZUNJINGDE   0.3
+
+body ZHCN_BLACK_BODY_QIANSHANG    /洽商/
+describe ZHCN_BLACK_BODY_QIANSHANG    Body contains "洽商"
+score ZHCN_BLACK_BODY_QIANSHANG   0.40
+
+body ZHCN_BLACK_BODY_BICI    /彼此/
+describe ZHCN_BLACK_BODY_BICI    Body contains "彼此"
+score ZHCN_BLACK_BODY_BICI   0.20
+
+body ZHCN_BLACK_BODY_QUANGUOGEDI    /全国各地/
+describe ZHCN_BLACK_BODY_QUANGUOGEDI    Body contains "全国各地"
+score ZHCN_BLACK_BODY_QUANGUOGEDI   0.12
+
+body ZHCN_BLACK_BODY_QIATAN    /洽谈/
+describe ZHCN_BLACK_BODY_QIATAN    Body contains "洽谈"
+score ZHCN_BLACK_BODY_QIATAN   0.80
+
+body ZHCN_BLACK_BODY_HUHUI    /互惠/
+describe ZHCN_BLACK_BODY_HUHUI    Body contains "互惠"
+score ZHCN_BLACK_BODY_HUHUI   0.10
+
+body ZHCN_BLACK_BODY_HULI    /互利/
+describe ZHCN_BLACK_BODY_HULI    Body contains "互利"
+score ZHCN_BLACK_BODY_HULI   0.10
+
+body ZHCN_BLACK_BODY_BICHENG    /必成/
+describe ZHCN_BLACK_BODY_BICHENG    Body contains "必成"
+score ZHCN_BLACK_BODY_BICHENG   0.20
+
+body ZHCN_BLACK_BODY_DUONIAN    /多年/
+describe ZHCN_BLACK_BODY_DUONIAN    Body contains "多年"
+score ZHCN_BLACK_BODY_DUONIAN   0.10
+
+body ZHCN_BLACK_BODY_YIZHI    /一直/
+describe ZHCN_BLACK_BODY_YIZHI    Body contains "一直"
+score ZHCN_BLACK_BODY_YIZHI   0.10
+
+body ZHCN_BLACK_BODY_CHENGLI    /成立/
+describe ZHCN_BLACK_BODY_CHENGLI    Body contains "成立"
+score ZHCN_BLACK_BODY_CHENGLI   0.10
+
+body ZHCN_BLACK_BODY_XINGLONG    /兴隆/
+describe ZHCN_BLACK_BODY_XINGLONG    Body contains "兴隆"
+score ZHCN_BLACK_BODY_XINGLONG   0.85
+
+body ZHCN_BLACK_BODY_KAIPIAO    /开票/
+describe ZHCN_BLACK_BODY_KAIPIAO    Body contains "开票"
+score ZHCN_BLACK_BODY_KAIPIAO   0.50
+
+body ZHCN_BLACK_BODY_JIANCHI    /坚持/
+describe ZHCN_BLACK_BODY_JIANCHI    Body contains "坚持"
+score ZHCN_BLACK_BODY_JIANCHI   0.10
+
+body ZHCN_BLACK_BODY_FUWU    /服务/
+describe ZHCN_BLACK_BODY_FUWU    Body contains "服务"
+score ZHCN_BLACK_BODY_FUWU   0.15
+
+body ZHCN_BLACK_BODY_ZHENZHENG    /真正/
+describe ZHCN_BLACK_BODY_ZHENZHENG    Body contains "真正"
+score ZHCN_BLACK_BODY_ZHENZHENG   0.20
+
+body ZHCN_BLACK_BODY_ZUODAO    /做到/
+describe ZHCN_BLACK_BODY_ZUODAO    Body contains "做到"
+score ZHCN_BLACK_BODY_ZUODAO   0.20
+
+body ZHCN_BLACK_BODY_YUE    /余额/
+describe ZHCN_BLACK_BODY_YUE    Body contains "余额"
+score ZHCN_BLACK_BODY_YUE   0.10
+
+body ZHCN_BLACK_BODY_YEWU    /业务/
+describe ZHCN_BLACK_BODY_YEWU    Body contains "业务"
+score ZHCN_BLACK_BODY_YEWU   0.10
+
+body ZHCN_BLACK_BODY_SHULI    /树立/
+describe ZHCN_BLACK_BODY_SHULI    Body contains "树立"
+score ZHCN_BLACK_BODY_SHULI   0.20
+
+body ZHCN_BLACK_BODY_DAIZHENG    /代征/
+describe ZHCN_BLACK_BODY_DAIZHENG    Body contains "代征"
+score ZHCN_BLACK_BODY_DAIZHENG   0.40
+
+body ZHCN_BLACK_BODY_SHANGQI    /商祺/
+describe ZHCN_BLACK_BODY_SHANGQI    Body contains "商祺"
+score ZHCN_BLACK_BODY_SHANGQI   1.55
+
+body ZHCN_BLACK_BODY_JINGQING    /敬请/
+describe ZHCN_BLACK_BODY_JINGQING    Body contains "敬请"
+score ZHCN_BLACK_BODY_JINGQING   0.20
+
+body ZHCN_BLACK_BODY_JINXIAOCUN    /进销存/
+describe ZHCN_BLACK_BODY_JINXIAOCUN    Body contains "进销存"
+score ZHCN_BLACK_BODY_JINXIAOCUN   1.50
+
+body ZHCN_BLACK_BODY_WUBIAOTI    /无标题/
+describe ZHCN_BLACK_BODY_WUBIAOTI    Body contains "无标题"
+score ZHCN_BLACK_BODY_WUBIAOTI   1.20
+
+body ZHCN_BLACK_BODY_HUANYING    /欢迎/
+describe ZHCN_BLACK_BODY_HUANYING    Body contains "欢迎"
+score ZHCN_BLACK_BODY_HUANYING   0.10
+
+body ZHCN_BLACK_BODY_CHADIAN    /茶点/
+describe ZHCN_BLACK_BODY_CHADIAN    Body contains "茶点"
+score ZHCN_BLACK_BODY_CHADIAN   1.00
+
+body ZHCN_BLACK_BODY_XIANYOU    /现有/
+describe ZHCN_BLACK_BODY_XIANYOU    Body contains "现有"
+score ZHCN_BLACK_BODY_XIANYOU   0.3
+
+body ZHCN_BLACK_BODY_NINHAO    /您好/
+describe ZHCN_BLACK_BODY_NINHAO    Body contains "您好"
+score ZHCN_BLACK_BODY_NINHAO   0.3
+
+body ZHCN_BLACK_BODY_BIAOTIWENDANG    /标题文档/
+describe ZHCN_BLACK_BODY_BIAOTIWENDANG    Body contains "标题文档"
+score ZHCN_BLACK_BODY_BIAOTIWENDANG   1.50
+
+body ZHCN_BLACK_BODY_ANLI    /案例/
+describe ZHCN_BLACK_BODY_ANLI    Body contains "案例"
+score ZHCN_BLACK_BODY_ANLI   0.40
+
+body ZHCN_BLACK_BODY_FENXI    /分析/
+describe ZHCN_BLACK_BODY_FENXI    Body contains "分析"
+score ZHCN_BLACK_BODY_FENXI   0.40
+
+body ZHCN_BLACK_BODY_RUXU    /如需/
+describe ZHCN_BLACK_BODY_RUXU    Body contains "如需"
+score ZHCN_BLACK_BODY_RUXU   0.40
+
+body ZHCN_BLACK_BODY_SHANGTAN    /商谈/
+describe ZHCN_BLACK_BODY_SHANGTAN    Body contains "商谈"
+score ZHCN_BLACK_BODY_SHANGTAN   0.20
+
+body ZHCN_BLACK_BODY_PEIXUN    /培训/
+describe ZHCN_BLACK_BODY_PEIXUN    Body contains "培训"
+score ZHCN_BLACK_BODY_PEIXUN   0.10
+
+body ZHCN_BLACK_BODY_DIANHUA    /电话/
+describe ZHCN_BLACK_BODY_DIANHUA    Body contains "电话"
+score ZHCN_BLACK_BODY_DIANHUA   0.1
+
+body ZHCN_BLACK_BODY_DUANXIN    /短信/
+describe ZHCN_BLACK_BODY_DUANXIN    Body contains "短信"
+score ZHCN_BLACK_BODY_DUANXIN   0.1
+
+body ZHCN_BLACK_BODY_WEIXIN    /微信/
+describe ZHCN_BLACK_BODY_WEIXIN    Body contains "微信"
+score ZHCN_BLACK_BODY_WEIXIN   0.1
+
+body ZHCN_BLACK_BODY_BENZHE    /本着/
+describe ZHCN_BLACK_BODY_BENZHE    Body contains "本着"
+score ZHCN_BLACK_BODY_BENZHE   0.3
+
+body ZHCN_BLACK_BODY_RUYOU    /如有/
+describe ZHCN_BLACK_BODY_RUYOU    Body contains "如有"
+score ZHCN_BLACK_BODY_RUYOU   0.3
+
+body ZHCN_BLACK_BODY_JINGQING    /敬请/
+describe ZHCN_BLACK_BODY_JINGQING    Body contains "敬请"
+score ZHCN_BLACK_BODY_JINGQING   0.5
+
+body ZHCN_BLACK_BODY_YUANLIANG    /原谅/
+describe ZHCN_BLACK_BODY_YUANLIANG    Body contains "原谅"
+score ZHCN_BLACK_BODY_YUANLIANG   0.6
+
+body ZHCN_BLACK_BODY_JINCHUKOU    /进出口/
+describe ZHCN_BLACK_BODY_JINCHUKOU    Body contains "进出口"
+score ZHCN_BLACK_BODY_JINCHUKOU   0.10
+
+body ZHCN_BLACK_BODY_JINKOU    /进口/
+describe ZHCN_BLACK_BODY_JINKOU    Body contains "进出口"
+score ZHCN_BLACK_BODY_JINKOU   0.10
+
+body ZHCN_BLACK_BODY_CHUKOU    /出口/
+describe ZHCN_BLACK_BODY_CHUKOU    Body contains "进出口"
+score ZHCN_BLACK_BODY_CHUKOU   0.10
+
+body ZHCN_BLACK_BODY_SHILI    /实力/
+describe ZHCN_BLACK_BODY_SHILI    Body contains "实力"
+score ZHCN_BLACK_BODY_SHILI   0.10
+
+body ZHCN_BLACK_BODY_DANWEIMINGCHENG    /单位名称/
+describe ZHCN_BLACK_BODY_DANWEIMINGCHENG    Body contains "单位名称"
+score ZHCN_BLACK_BODY_DANWEIMINGCHENG   0.30
+
+body ZHCN_BLACK_BODY_KAIHU    /开户/
+describe ZHCN_BLACK_BODY_KAIHU    Body contains "开户"
+score ZHCN_BLACK_BODY_KAIHU   0.30
+
+body ZHCN_BLACK_BODY_DENGAN    /等按/
+describe ZHCN_BLACK_BODY_DENGAN    Body contains "等按"
+score ZHCN_BLACK_BODY_DENGAN   0.10
+
+body ZHCN_BLACK_BODY_QUANGUO    /全国/
+describe ZHCN_BLACK_BODY_QUANGUO    Body contains "全国"
+score ZHCN_BLACK_BODY_QUANGUO   0.4
+
+body ZHCN_BLACK_BODY_JITUAN    /集团/
+describe ZHCN_BLACK_BODY_JITUAN    Body contains "集团"
+score ZHCN_BLACK_BODY_JITUAN   0.20
+
+body ZHCN_BLACK_BODY_ZHUANZHANG    /转帐/
+describe ZHCN_BLACK_BODY_ZHUANZHANG    Body contains "转帐"
+score ZHCN_BLACK_BODY_ZHUANZHANG   0.20
+
+body ZHCN_BLACK_BODY_HANGYE    /行业/
+describe ZHCN_BLACK_BODY_HANGYE    Body contains "行业"
+score ZHCN_BLACK_BODY_HANGYE   0.40
+
+body ZHCN_BLACK_BODY_CHENGNUO    /承诺/
+describe ZHCN_BLACK_BODY_CHENGNUO    Body contains "承诺"
+score ZHCN_BLACK_BODY_CHENGNUO   0.40
+
+body ZHCN_BLACK_BODY_FUJIANZHUAN    /附件转/
+describe ZHCN_BLACK_BODY_FUJIANZHUAN    Body "附件转"
+score ZHCN_BLACK_BODY_FUJIANZHUAN   1.50
+
+body ZHCN_BLACK_BODY_RENLIZIYUAN    /人力资源/
+describe ZHCN_BLACK_BODY_RENLIZIYUAN    Body "附件转人力资源"
+score ZHCN_BLACK_BODY_RENLIZIYUAN   0.5
+
+body ZHCN_BLACK_BODY_ZHURUCILEI   /诸如此类/
+describe ZHCN_BLACK_BODY_ZHURUCILEI   Body "诸如此类"
+score ZHCN_BLACK_BODY_ZHURUCILEI  1.200
+
+body ZHCN_BLACK_BODY_CANKAO   /参考/
+describe ZHCN_BLACK_BODY_CANKAO   Body "参考"
+score ZHCN_BLACK_BODY_CANKAO  0.30
+
+body ZHCN_BLACK_BODY_BAOMING   /报名/
+describe ZHCN_BLACK_BODY_BAOMING   Body "报名"
+score ZHCN_BLACK_BODY_BAOMING  1.50
+
+body ZHCN_BLACK_BODY_ZHUBAN   /主办/
+describe ZHCN_BLACK_BODY_ZHUBAN   Body "主办"
+score ZHCN_BLACK_BODY_ZHUBAN  1.000
+
+body ZHCN_BLACK_BODY_FEIYONG   /费用/
+describe ZHCN_BLACK_BODY_FEIYONG   Body "费用"
+score ZHCN_BLACK_BODY_FEIYONG  0.80
+
+body ZHCN_BLACK_BODY_BAOKUO   /包括/
+describe ZHCN_BLACK_BODY_BAOKUO   Body "包括"
+score ZHCN_BLACK_BODY_BAOKUO  0.80
+
+body ZHCN_BLACK_BODY_RUBUXU   /如不需/
+describe ZHCN_BLACK_BODY_RUBUXU   Body "如不需"
+score ZHCN_BLACK_BODY_RUBUXU  2.000
+
+body ZHCN_BLACK_BODY_1008   /\d元/
+describe ZHCN_BLACK_BODY_1008   Body "X元"
+score ZHCN_BLACK_BODY_1008  0.60
+
+body ZHCN_BLACK_BODY_XUNSU   /迅速/
+describe ZHCN_BLACK_BODY_XUNSU   Body "迅速"
+score ZHCN_BLACK_BODY_XUNSU  0.80
+
+body ZHCN_BLACK_BODY_TISHENG   /提升/
+describe ZHCN_BLACK_BODY_TISHENG   Body "提升"
+score ZHCN_BLACK_BODY_TISHENG  0.85
+
+body ZHCN_BLACK_BODY_XINZHENG   /新政/
+describe ZHCN_BLACK_BODY_XINZHENG   Body "新政"
+score ZHCN_BLACK_BODY_XINZHENG  1.80
+
+body ZHCN_BLACK_BODY_JIEDU   /解读/
+describe ZHCN_BLACK_BODY_JIEDU   Body "解读"
+score ZHCN_BLACK_BODY_JIEDU  1.00
+
+body ZHCN_BLACK_BODY_RENMINBI   /人民币/
+describe ZHCN_BLACK_BODY_RENMINBI   Body "人民币"
+score ZHCN_BLACK_BODY_RENMINBI  0.500
+

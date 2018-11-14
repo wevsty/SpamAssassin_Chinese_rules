@@ -1,0 +1,46 @@
+#Content-Type: application/vnd.ms-word.document.macroEnabled.12; name="FE83007_6598172731.docm"
+#Content-Transfer-Encoding: BASE64
+#Content-Disposition: attachment; filename="FE83007_6598172731.docm"
+#Content-Disposition: attachment;
+#     filename="=?utf-8?B?5LyB5Lia57i+5pWI6ICD5qC45LiO6Jaq6YWs5L2T57O76K6+6K6h5a6e5oiY54m56K6t54+tLnR4dA==?="
+
+#full __ATTACHMENT_FOUND_01 /Content-Disposition:( )?attachment/
+#full __ATTACHMENT_FOUND_02 /Content-Disposition:.*\s?.*filename( )?=/
+#meta ATTACHMENT_FOUND __ATTACHMENT_FOUND_01
+#score ATTACHMENT_FOUND    0.1
+
+#full __ATTACHMENT_FOUND_OFFICEDOC /Content-Disposition:.*\s?.*filename( )?=\".*(((\.docm)|(\.xlsm)|(\.pptm)))+\"/
+#meta ATTACHMENT_FOUND_OFFICEDOC __ATTACHMENT_FOUND_OFFICEDOC
+#score ATTACHMENT_FOUND_OFFICEDOC    0.3
+
+#full __ATTACHMENT_FOUND_JS /Content-Disposition:.*\s?.*filename( )?=\".*((\.js))+\"/
+#meta ATTACHMENT_FOUND_JS __ATTACHMENT_FOUND_JS
+#score ATTACHMENT_FOUND_JS 0.3
+
+#full __ATTACHMENT_FOUND_ZIP /Content-Disposition:.*\s?.*filename( )?=\".*((\.zip))+\"/
+#meta ATTACHMENT_FOUND_ZIP __ATTACHMENT_FOUND_ZIP
+#score ATTACHMENT_FOUND    0.1
+
+
+#MIMEHeader
+ifplugin Mail::SpamAssassin::Plugin::MIMEHeader
+    mimeheader  _MIME_ATTACHMENT_FOUND_01_  Content-Disposition =~ /attachment/i
+    meta ATTACHMENT_FOUND _MIME_ATTACHMENT_FOUND_01_
+    describe ATTACHMENT_FOUND Found Attachment
+    score ATTACHMENT_FOUND    0.1
+    
+    mimeheader  _MIME_ATTACHMENT_OFFICEDOC_  Content-Disposition =~ /.*filename( )?=\".*(((\.doc)|(\.xls)|(\.ppt))(x|m)?)+\"/i
+    meta ATTACHMENT_FOUND_OFFICEDOC _MIME_ATTACHMENT_OFFICEDOC_
+    describe ATTACHMENT_FOUND_OFFICEDOC Found Office Attachment
+    score ATTACHMENT_FOUND_OFFICEDOC    0.1
+    
+    mimeheader  _MIME_ATTACHMENT_SCRIPT_  Content-Disposition =~ /.*filename( )?=\".*(((\.js)|(\.bat)|(\.vbs)))+\"/i
+    meta ATTACHMENT_FOUND_SCRIPT _MIME_ATTACHMENT_SCRIPT_
+    describe ATTACHMENT_FOUND_SCRIPT Found Script Attachment
+    score ATTACHMENT_FOUND_SCRIPT    0.1
+    
+    mimeheader  _MIME_ATTACHMENT_ARCHIVE_  Content-Disposition =~ /.*filename( )?=\".*(((\.zip)|(\.rar)|(\.7z)))+\"/i
+    meta ATTACHMENT_FOUND_ARCHIVE _MIME_ATTACHMENT_ARCHIVE_
+    describe ATTACHMENT_FOUND_ARCHIVE Found Archive Attachment
+    score ATTACHMENT_FOUND_ARCHIVE    0.1
+endif
